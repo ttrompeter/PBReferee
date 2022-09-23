@@ -11,7 +11,7 @@ import SwiftUI
 struct PBRefereeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }

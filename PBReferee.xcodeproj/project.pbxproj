@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4994428DE75D7003EB9B7 /* PBRefereeApp.swift */; };
-		E3C4994728DE75D7003EB9B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4994628DE75D7003EB9B7 /* ContentView.swift */; };
+		E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */; };
 		E3C4994928DE75D8003EB9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C4994828DE75D8003EB9B7 /* Assets.xcassets */; };
 		E3C4994C28DE75D8003EB9B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C4994B28DE75D8003EB9B7 /* Preview Assets.xcassets */; };
+		E3DD3F5B28DE7CD7008B47C4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E3DD3F5A28DE7CD7008B47C4 /* Realm */; };
+		E3DD3F5D28DE7CD7008B47C4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E3DD3F5C28DE7CD7008B47C4 /* RealmSwift */; };
+		E3DD3F6028DE7E1D008B47C4 /* ScreenshotSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E3DD3F5F28DE7E1D008B47C4 /* ScreenshotSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3C4994128DE75D7003EB9B7 /* PBReferee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBReferee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C4994428DE75D7003EB9B7 /* PBRefereeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBRefereeApp.swift; sourceTree = "<group>"; };
-		E3C4994628DE75D7003EB9B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E3C4994828DE75D8003EB9B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3C4994B28DE75D8003EB9B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3DD3F5D28DE7CD7008B47C4 /* RealmSwift in Frameworks */,
+				E3DD3F5B28DE7CD7008B47C4 /* Realm in Frameworks */,
+				E3DD3F6028DE7E1D008B47C4 /* ScreenshotSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				E3C4994428DE75D7003EB9B7 /* PBRefereeApp.swift */,
-				E3C4994628DE75D7003EB9B7 /* ContentView.swift */,
+				E3DD3F5628DE770D008B47C4 /* Model */,
+				E3DD3F5728DE7716008B47C4 /* View */,
+				E3DD3F5828DE772B008B47C4 /* SupportFiles */,
 				E3C4994828DE75D8003EB9B7 /* Assets.xcassets */,
 				E3C4994A28DE75D8003EB9B7 /* Preview Content */,
 			);
@@ -65,6 +73,28 @@
 				E3C4994B28DE75D8003EB9B7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3DD3F5628DE770D008B47C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3DD3F5728DE7716008B47C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E3DD3F5828DE772B008B47C4 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,11 @@
 			dependencies = (
 			);
 			name = PBReferee;
+			packageProductDependencies = (
+				E3DD3F5A28DE7CD7008B47C4 /* Realm */,
+				E3DD3F5C28DE7CD7008B47C4 /* RealmSwift */,
+				E3DD3F5F28DE7E1D008B47C4 /* ScreenshotSwiftUI */,
+			);
 			productName = PBReferee;
 			productReference = E3C4994128DE75D7003EB9B7 /* PBReferee.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,10 @@
 				Base,
 			);
 			mainGroup = E3C4993828DE75D7003EB9B7;
+			packageReferences = (
+				E3DD3F5928DE7CD7008B47C4 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				E3DD3F5E28DE7E1D008B47C4 /* XCRemoteSwiftPackageReference "ScreenshotSwiftUI" */,
+			);
 			productRefGroup = E3C4994228DE75D7003EB9B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C4994728DE75D7003EB9B7 /* ContentView.swift in Sources */,
+				E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */,
 				E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +312,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +321,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.woolsackservices.PBReferee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -302,8 +344,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +353,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.woolsackservices.PBReferee;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -339,6 +384,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E3DD3F5928DE7CD7008B47C4 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.4;
+			};
+		};
+		E3DD3F5E28DE7E1D008B47C4 /* XCRemoteSwiftPackageReference "ScreenshotSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gualtierofrigerio/ScreenshotSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E3DD3F5A28DE7CD7008B47C4 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3DD3F5928DE7CD7008B47C4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		E3DD3F5C28DE7CD7008B47C4 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3DD3F5928DE7CD7008B47C4 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		E3DD3F5F28DE7E1D008B47C4 /* ScreenshotSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3DD3F5E28DE7E1D008B47C4 /* XCRemoteSwiftPackageReference "ScreenshotSwiftUI" */;
+			productName = ScreenshotSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E3C4993928DE75D7003EB9B7 /* Project object */;
 }
