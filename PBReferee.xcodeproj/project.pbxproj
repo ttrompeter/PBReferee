@@ -14,7 +14,6 @@
 		E3DD3F5B28DE7CD7008B47C4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = E3DD3F5A28DE7CD7008B47C4 /* Realm */; };
 		E3DD3F5D28DE7CD7008B47C4 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E3DD3F5C28DE7CD7008B47C4 /* RealmSwift */; };
 		E3DD3F6028DE7E1D008B47C4 /* ScreenshotSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E3DD3F5F28DE7E1D008B47C4 /* ScreenshotSwiftUI */; };
-		E3DD3F6228DE8548008B47C4 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6128DE8548008B47C4 /* Archive.swift */; };
 		E3DD3F6428DE87EC008B47C4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6328DE87EC008B47C4 /* Game.swift */; };
 		E3DD3F6628DE881E008B47C4 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6528DE881E008B47C4 /* Match.swift */; };
 		E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */; };
@@ -23,6 +22,14 @@
 		E3DD3F6E28DE8921008B47C4 /* TimeoutImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6D28DE8921008B47C4 /* TimeoutImage.swift */; };
 		E3DD3F7028DE8982008B47C4 /* PickleballRulebook2022.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E3DD3F6F28DE8982008B47C4 /* PickleballRulebook2022.pdf */; };
 		E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7128DE8A31008B47C4 /* Contants.swift */; };
+		E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */; };
+		E3DD3F7628DE952B008B47C4 /* user_manual.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E3DD3F7528DE952B008B47C4 /* user_manual.pdf */; };
+		E3DD3F7828DE9573008B47C4 /* ScoringImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7728DE9573008B47C4 /* ScoringImages.swift */; };
+		E3DD3F7A28DE959E008B47C4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7928DE959E008B47C4 /* Settings.swift */; };
+		E3DD3F7C28DE9623008B47C4 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7B28DE9623008B47C4 /* StorageManager.swift */; };
+		E3DD3F7E28DE9658008B47C4 /* ArchivedMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7D28DE9658008B47C4 /* ArchivedMatch.swift */; };
+		E3DD3F8028DE96A2008B47C4 /* Violation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7F28DE96A2008B47C4 /* Violation.swift */; };
+		E3EE189828DE9B6E005E0DD6 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE189728DE9B6E005E0DD6 /* MailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +38,6 @@
 		E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		E3C4994828DE75D8003EB9B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3C4994B28DE75D8003EB9B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E3DD3F6128DE8548008B47C4 /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
 		E3DD3F6328DE87EC008B47C4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E3DD3F6528DE881E008B47C4 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreImage.swift; sourceTree = "<group>"; };
@@ -40,6 +46,14 @@
 		E3DD3F6D28DE8921008B47C4 /* TimeoutImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeoutImage.swift; sourceTree = "<group>"; };
 		E3DD3F6F28DE8982008B47C4 /* PickleballRulebook2022.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PickleballRulebook2022.pdf; sourceTree = "<group>"; };
 		E3DD3F7128DE8A31008B47C4 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		E3DD3F7528DE952B008B47C4 /* user_manual.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = user_manual.pdf; sourceTree = "<group>"; };
+		E3DD3F7728DE9573008B47C4 /* ScoringImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringImages.swift; sourceTree = "<group>"; };
+		E3DD3F7928DE959E008B47C4 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E3DD3F7B28DE9623008B47C4 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		E3DD3F7D28DE9658008B47C4 /* ArchivedMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedMatch.swift; sourceTree = "<group>"; };
+		E3DD3F7F28DE96A2008B47C4 /* Violation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violation.swift; sourceTree = "<group>"; };
+		E3EE189728DE9B6E005E0DD6 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,7 @@
 				E3DD3F5728DE7716008B47C4 /* View */,
 				E3DD3F5828DE772B008B47C4 /* SupportFiles */,
 				E3DD3F6F28DE8982008B47C4 /* PickleballRulebook2022.pdf */,
+				E3DD3F7528DE952B008B47C4 /* user_manual.pdf */,
 				E3C4994828DE75D8003EB9B7 /* Assets.xcassets */,
 				E3C4994A28DE75D8003EB9B7 /* Preview Content */,
 			);
@@ -97,13 +112,19 @@
 		E3DD3F5628DE770D008B47C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E3DD3F6128DE8548008B47C4 /* Archive.swift */,
+				E3DD3F7D28DE9658008B47C4 /* ArchivedMatch.swift */,
 				E3DD3F6328DE87EC008B47C4 /* Game.swift */,
+				E3EE189728DE9B6E005E0DD6 /* MailView.swift */,
 				E3DD3F6528DE881E008B47C4 /* Match.swift */,
+				E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */,
 				E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */,
 				E3DD3F6928DE889C008B47C4 /* ScoresheetManager.swift */,
+				E3DD3F7728DE9573008B47C4 /* ScoringImages.swift */,
+				E3DD3F7928DE959E008B47C4 /* Settings.swift */,
 				E3DD3F6B28DE88F0008B47C4 /* SheetManager.swift */,
+				E3DD3F7B28DE9623008B47C4 /* StorageManager.swift */,
 				E3DD3F6D28DE8921008B47C4 /* TimeoutImage.swift */,
+				E3DD3F7F28DE96A2008B47C4 /* Violation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +215,7 @@
 				E3DD3F7028DE8982008B47C4 /* PickleballRulebook2022.pdf in Resources */,
 				E3C4994C28DE75D8003EB9B7 /* Preview Assets.xcassets in Resources */,
 				E3C4994928DE75D8003EB9B7 /* Assets.xcassets in Resources */,
+				E3DD3F7628DE952B008B47C4 /* user_manual.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,14 +228,20 @@
 			files = (
 				E3DD3F6A28DE889C008B47C4 /* ScoresheetManager.swift in Sources */,
 				E3DD3F6C28DE88F0008B47C4 /* SheetManager.swift in Sources */,
+				E3DD3F8028DE96A2008B47C4 /* Violation.swift in Sources */,
+				E3DD3F7A28DE959E008B47C4 /* Settings.swift in Sources */,
+				E3DD3F7E28DE9658008B47C4 /* ArchivedMatch.swift in Sources */,
+				E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */,
 				E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */,
-				E3DD3F6228DE8548008B47C4 /* Archive.swift in Sources */,
+				E3EE189828DE9B6E005E0DD6 /* MailView.swift in Sources */,
+				E3DD3F7828DE9573008B47C4 /* ScoringImages.swift in Sources */,
 				E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */,
 				E3DD3F6628DE881E008B47C4 /* Match.swift in Sources */,
 				E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */,
 				E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */,
 				E3DD3F6E28DE8921008B47C4 /* TimeoutImage.swift in Sources */,
 				E3DD3F6428DE87EC008B47C4 /* Game.swift in Sources */,
+				E3DD3F7C28DE9623008B47C4 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
