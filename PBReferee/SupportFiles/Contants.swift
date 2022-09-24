@@ -15,6 +15,15 @@ struct Constants {
     
     static var BOX_DIMENSION = CGFloat(28)
     
+    //static var LAST_ACTION_TYPE_IS_SECOND_SERVER = true
+    static var LAST_ACTION_TYPE_POINT = "Point"
+    static var LAST_ACTION_TYPE_SECOND_SERVER = "2ndServer"
+    static var LAST_ACTION_TYPE_SIDE_OUT = "Sideout"
+    static var LAST_ACTION_TYPE_TECHNICAL_FOUL = "TechnicalFoul"
+    static var LAST_ACTION_TYPE_TIMEOUT = "Timeout"
+    static var LAST_ACTION_TYPE_VIOLATION = "Violation"
+    static var LAST_ACTION_TYPE_WARNING = "Warning"
+    
     
     //********************************************************************************
     //     COLORS
@@ -112,6 +121,7 @@ struct Constants {
     static var TRIANGLE = "triangle"
     
     //********************************************************************************
+    
     
     
     

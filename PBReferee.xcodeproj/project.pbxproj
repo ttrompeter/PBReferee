@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3AC92BF28DEF20100C1FF5D /* DataLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92BE28DEF20100C1FF5D /* DataLoadView.swift */; };
+		E3AC92C128DEF24C00C1FF5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C028DEF24C00C1FF5D /* HomeView.swift */; };
+		E3AC92C328DEF2A100C1FF5D /* FunctionalityButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C228DEF2A100C1FF5D /* FunctionalityButtonsView.swift */; };
+		E3AC92C528DEF2DB00C1FF5D /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C428DEF2DB00C1FF5D /* MatchView.swift */; };
+		E3AC92C728DEF36900C1FF5D /* TopButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C628DEF36900C1FF5D /* TopButtonsView.swift */; };
+		E3AC92C928DEF3C400C1FF5D /* ViolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C828DEF3C400C1FF5D /* ViolationView.swift */; };
+		E3AC92CB28DEF42C00C1FF5D /* BottomButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92CA28DEF42C00C1FF5D /* BottomButtonsView.swift */; };
+		E3AC92CD28DEF49500C1FF5D /* PreMatchBriefingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92CC28DEF49500C1FF5D /* PreMatchBriefingView.swift */; };
+		E3AC92CF28DEF4CB00C1FF5D /* CorrectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92CE28DEF4CB00C1FF5D /* CorrectionView.swift */; };
+		E3AC92D128DEF51100C1FF5D /* TechnicalFoulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92D028DEF51100C1FF5D /* TechnicalFoulView.swift */; };
+		E3AC92D328DEF57A00C1FF5D /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92D228DEF57A00C1FF5D /* HelpView.swift */; };
+		E3AC92D528DEF5AE00C1FF5D /* WarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92D428DEF5AE00C1FF5D /* WarningView.swift */; };
+		E3AC92D728DEF5E800C1FF5D /* ViolationStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92D628DEF5E800C1FF5D /* ViolationStatusView.swift */; };
+		E3AC92D928DEF66F00C1FF5D /* TimeOutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92D828DEF66F00C1FF5D /* TimeOutsView.swift */; };
+		E3AC92DB28DEF6A000C1FF5D /* RegularTimeOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92DA28DEF6A000C1FF5D /* RegularTimeOutView.swift */; };
+		E3AC92DD28DEF6FA00C1FF5D /* BottomButtonsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92DC28DEF6FA00C1FF5D /* BottomButtonsExtension.swift */; };
+		E3AC92DF28DEF75B00C1FF5D /* MatchSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92DE28DEF75B00C1FF5D /* MatchSetupView.swift */; };
+		E3AC92E128DEFE0E00C1FF5D /* MatchOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92E028DEFE0E00C1FF5D /* MatchOverView.swift */; };
+		E3AC92E328DEFF0F00C1FF5D /* ChangeSidesTeam1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92E228DEFF0F00C1FF5D /* ChangeSidesTeam1View.swift */; };
+		E3AC92E528DEFF4700C1FF5D /* ChangeSidesTeam2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92E428DEFF4700C1FF5D /* ChangeSidesTeam2View.swift */; };
+		E3AC92E728DEFFD700C1FF5D /* PointsScoringTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92E628DEFFD700C1FF5D /* PointsScoringTitlesView.swift */; };
+		E3AC92E928DF00D800C1FF5D /* ScoringSectionTeam1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92E828DF00D800C1FF5D /* ScoringSectionTeam1View.swift */; };
+		E3AC92EB28DF012600C1FF5D /* ScoringSectionTeam2view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92EA28DF012600C1FF5D /* ScoringSectionTeam2view.swift */; };
+		E3AC92ED28DF017D00C1FF5D /* ScoringRowsTeam1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92EC28DF017D00C1FF5D /* ScoringRowsTeam1View.swift */; };
+		E3AC92EF28DF01B900C1FF5D /* ScoringRowsTeam2view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2view.swift */; };
+		E3AC92F128DF052F00C1FF5D /* TeamListingTeam1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92F028DF052F00C1FF5D /* TeamListingTeam1View.swift */; };
+		E3AC92F328DF059D00C1FF5D /* TeamListingTeam2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92F228DF059D00C1FF5D /* TeamListingTeam2View.swift */; };
 		E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4994428DE75D7003EB9B7 /* PBRefereeApp.swift */; };
 		E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */; };
 		E3C4994928DE75D8003EB9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C4994828DE75D8003EB9B7 /* Assets.xcassets */; };
@@ -60,10 +87,37 @@
 		E3EE18D028DEAF85005E0DD6 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18CF28DEAF85005E0DD6 /* IntroductionView.swift */; };
 		E3EE18D228DEAFBE005E0DD6 /* IntroductionOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18D128DEAFBE005E0DD6 /* IntroductionOverviewView.swift */; };
 		E3EE18D428DEB001005E0DD6 /* QuickstartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18D328DEB001005E0DD6 /* QuickstartView.swift */; };
-		E3EE18D628DEB070005E0DD6 /* ScdorekeepingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18D528DEB070005E0DD6 /* ScdorekeepingView.swift */; };
+		E3EE18D628DEB070005E0DD6 /* ScorekeepingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18D528DEB070005E0DD6 /* ScorekeepingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3AC92BE28DEF20100C1FF5D /* DataLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadView.swift; sourceTree = "<group>"; };
+		E3AC92C028DEF24C00C1FF5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E3AC92C228DEF2A100C1FF5D /* FunctionalityButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalityButtonsView.swift; sourceTree = "<group>"; };
+		E3AC92C428DEF2DB00C1FF5D /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		E3AC92C628DEF36900C1FF5D /* TopButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButtonsView.swift; sourceTree = "<group>"; };
+		E3AC92C828DEF3C400C1FF5D /* ViolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolationView.swift; sourceTree = "<group>"; };
+		E3AC92CA28DEF42C00C1FF5D /* BottomButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonsView.swift; sourceTree = "<group>"; };
+		E3AC92CC28DEF49500C1FF5D /* PreMatchBriefingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreMatchBriefingView.swift; sourceTree = "<group>"; };
+		E3AC92CE28DEF4CB00C1FF5D /* CorrectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectionView.swift; sourceTree = "<group>"; };
+		E3AC92D028DEF51100C1FF5D /* TechnicalFoulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalFoulView.swift; sourceTree = "<group>"; };
+		E3AC92D228DEF57A00C1FF5D /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		E3AC92D428DEF5AE00C1FF5D /* WarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningView.swift; sourceTree = "<group>"; };
+		E3AC92D628DEF5E800C1FF5D /* ViolationStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolationStatusView.swift; sourceTree = "<group>"; };
+		E3AC92D828DEF66F00C1FF5D /* TimeOutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutsView.swift; sourceTree = "<group>"; };
+		E3AC92DA28DEF6A000C1FF5D /* RegularTimeOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTimeOutView.swift; sourceTree = "<group>"; };
+		E3AC92DC28DEF6FA00C1FF5D /* BottomButtonsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonsExtension.swift; sourceTree = "<group>"; };
+		E3AC92DE28DEF75B00C1FF5D /* MatchSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSetupView.swift; sourceTree = "<group>"; };
+		E3AC92E028DEFE0E00C1FF5D /* MatchOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchOverView.swift; sourceTree = "<group>"; };
+		E3AC92E228DEFF0F00C1FF5D /* ChangeSidesTeam1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSidesTeam1View.swift; sourceTree = "<group>"; };
+		E3AC92E428DEFF4700C1FF5D /* ChangeSidesTeam2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSidesTeam2View.swift; sourceTree = "<group>"; };
+		E3AC92E628DEFFD700C1FF5D /* PointsScoringTitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsScoringTitlesView.swift; sourceTree = "<group>"; };
+		E3AC92E828DF00D800C1FF5D /* ScoringSectionTeam1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSectionTeam1View.swift; sourceTree = "<group>"; };
+		E3AC92EA28DF012600C1FF5D /* ScoringSectionTeam2view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSectionTeam2view.swift; sourceTree = "<group>"; };
+		E3AC92EC28DF017D00C1FF5D /* ScoringRowsTeam1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringRowsTeam1View.swift; sourceTree = "<group>"; };
+		E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringRowsTeam2view.swift; sourceTree = "<group>"; };
+		E3AC92F028DF052F00C1FF5D /* TeamListingTeam1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListingTeam1View.swift; sourceTree = "<group>"; };
+		E3AC92F228DF059D00C1FF5D /* TeamListingTeam2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListingTeam2View.swift; sourceTree = "<group>"; };
 		E3C4994128DE75D7003EB9B7 /* PBReferee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBReferee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C4994428DE75D7003EB9B7 /* PBRefereeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBRefereeApp.swift; sourceTree = "<group>"; };
 		E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -115,7 +169,7 @@
 		E3EE18CF28DEAF85005E0DD6 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		E3EE18D128DEAFBE005E0DD6 /* IntroductionOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionOverviewView.swift; sourceTree = "<group>"; };
 		E3EE18D328DEB001005E0DD6 /* QuickstartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickstartView.swift; sourceTree = "<group>"; };
-		E3EE18D528DEB070005E0DD6 /* ScdorekeepingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScdorekeepingView.swift; sourceTree = "<group>"; };
+		E3EE18D528DEB070005E0DD6 /* ScorekeepingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorekeepingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,23 +252,49 @@
 				E3EE18B328DEA723005E0DD6 /* ArchivedMatchesListView.swift */,
 				E3EE18B528DEA80D005E0DD6 /* ArchivedMatchRowView.swift */,
 				E3EE18BB28DEAA33005E0DD6 /* ArchivedMatchView.swift */,
+				E3AC92CA28DEF42C00C1FF5D /* BottomButtonsView.swift */,
+				E3AC92E228DEFF0F00C1FF5D /* ChangeSidesTeam1View.swift */,
+				E3AC92E428DEFF4700C1FF5D /* ChangeSidesTeam2View.swift */,
+				E3AC92CE28DEF4CB00C1FF5D /* CorrectionView.swift */,
+				E3AC92BE28DEF20100C1FF5D /* DataLoadView.swift */,
 				E3EE18BF28DEAAA6005E0DD6 /* EnlargedImageView.swift */,
+				E3AC92C228DEF2A100C1FF5D /* FunctionalityButtonsView.swift */,
+				E3AC92D228DEF57A00C1FF5D /* HelpView.swift */,
+				E3AC92C028DEF24C00C1FF5D /* HomeView.swift */,
 				E3EE18D128DEAFBE005E0DD6 /* IntroductionOverviewView.swift */,
 				E3EE18CF28DEAF85005E0DD6 /* IntroductionView.swift */,
+				E3AC92E028DEFE0E00C1FF5D /* MatchOverView.swift */,
+				E3AC92DE28DEF75B00C1FF5D /* MatchSetupView.swift */,
 				E3EE18B928DEA9DB005E0DD6 /* MatchStatisticsIIView.swift */,
 				E3EE18B728DEA96D005E0DD6 /* MatchStatisticsView.swift */,
+				E3AC92C428DEF2DB00C1FF5D /* MatchView.swift */,
 				E3EE18CD28DEAF16005E0DD6 /* MedicalTimeOutView.swift */,
+				E3AC92E628DEFFD700C1FF5D /* PointsScoringTitlesView.swift */,
+				E3AC92CC28DEF49500C1FF5D /* PreMatchBriefingView.swift */,
 				E3EE18D328DEB001005E0DD6 /* QuickstartView.swift */,
 				E3EE18CB28DEAEBC005E0DD6 /* RefereeTimeOutView.swift */,
+				E3AC92DA28DEF6A000C1FF5D /* RegularTimeOutView.swift */,
 				E3EE18C528DEAD55005E0DD6 /* RulesView.swift */,
-				E3EE18D528DEB070005E0DD6 /* ScdorekeepingView.swift */,
+				E3EE18D528DEB070005E0DD6 /* ScorekeepingView.swift */,
 				E3EE18AB28DEA69F005E0DD6 /* ScoresheetAdminView.swift */,
 				E3EE18BD28DEAA78005E0DD6 /* ScoresheetImageView.swift */,
+				E3AC92EC28DF017D00C1FF5D /* ScoringRowsTeam1View.swift */,
+				E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2view.swift */,
+				E3AC92E828DF00D800C1FF5D /* ScoringSectionTeam1View.swift */,
+				E3AC92EA28DF012600C1FF5D /* ScoringSectionTeam2view.swift */,
 				E3EE18AD28DEA6BD005E0DD6 /* SettingsAdminView.swift */,
 				E3EE18AF28DEA6D9005E0DD6 /* StatisticsAdminView.swift */,
 				E3EE18C128DEAAF6005E0DD6 /* StatisticsImageView.swift */,
+				E3AC92F028DF052F00C1FF5D /* TeamListingTeam1View.swift */,
+				E3AC92F228DF059D00C1FF5D /* TeamListingTeam2View.swift */,
+				E3AC92D028DEF51100C1FF5D /* TechnicalFoulView.swift */,
+				E3AC92D828DEF66F00C1FF5D /* TimeOutsView.swift */,
+				E3AC92C628DEF36900C1FF5D /* TopButtonsView.swift */,
 				E3EE18B128DEA6F1005E0DD6 /* UserManualView.swift */,
 				E3EE18C928DEAE56005E0DD6 /* ViolationReferenceView.swift */,
+				E3AC92D628DEF5E800C1FF5D /* ViolationStatusView.swift */,
+				E3AC92C828DEF3C400C1FF5D /* ViolationView.swift */,
+				E3AC92D428DEF5AE00C1FF5D /* WarningView.swift */,
 				E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */,
 			);
 			path = View;
@@ -223,6 +303,7 @@
 		E3DD3F5828DE772B008B47C4 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E3AC92DC28DEF6FA00C1FF5D /* BottomButtonsExtension.swift */,
 				E3EE189928DE9C67005E0DD6 /* CheckToggleStyle.swift */,
 				E3DD3F7128DE8A31008B47C4 /* Contants.swift */,
 				E3EE18C728DEADA2005E0DD6 /* PDFKitView.swift */,
@@ -321,39 +402,65 @@
 			files = (
 				E3EE18B228DEA6F1005E0DD6 /* UserManualView.swift in Sources */,
 				E3EE18D428DEB001005E0DD6 /* QuickstartView.swift in Sources */,
+				E3AC92BF28DEF20100C1FF5D /* DataLoadView.swift in Sources */,
+				E3AC92DB28DEF6A000C1FF5D /* RegularTimeOutView.swift in Sources */,
+				E3AC92E328DEFF0F00C1FF5D /* ChangeSidesTeam1View.swift in Sources */,
 				E3EE18CA28DEAE56005E0DD6 /* ViolationReferenceView.swift in Sources */,
+				E3AC92EB28DF012600C1FF5D /* ScoringSectionTeam2view.swift in Sources */,
+				E3AC92F128DF052F00C1FF5D /* TeamListingTeam1View.swift in Sources */,
 				E3DD3F6A28DE889C008B47C4 /* ScoresheetManager.swift in Sources */,
 				E3EE18BC28DEAA33005E0DD6 /* ArchivedMatchView.swift in Sources */,
 				E3EE18B628DEA80D005E0DD6 /* ArchivedMatchRowView.swift in Sources */,
+				E3AC92DF28DEF75B00C1FF5D /* MatchSetupView.swift in Sources */,
+				E3AC92D328DEF57A00C1FF5D /* HelpView.swift in Sources */,
 				E3DD3F6C28DE88F0008B47C4 /* SheetManager.swift in Sources */,
 				E3EE18CE28DEAF16005E0DD6 /* MedicalTimeOutView.swift in Sources */,
 				E3DD3F8028DE96A2008B47C4 /* Violation.swift in Sources */,
+				E3AC92E128DEFE0E00C1FF5D /* MatchOverView.swift in Sources */,
+				E3AC92C528DEF2DB00C1FF5D /* MatchView.swift in Sources */,
+				E3AC92D528DEF5AE00C1FF5D /* WarningView.swift in Sources */,
 				E3EE18A228DE9D3B005E0DD6 /* ViewExtension.swift in Sources */,
 				E3EE18A028DE9D1C005E0DD6 /* UIImageExtension.swift in Sources */,
 				E3EE18C828DEADA2005E0DD6 /* PDFKitView.swift in Sources */,
+				E3AC92D728DEF5E800C1FF5D /* ViolationStatusView.swift in Sources */,
 				E3EE18B828DEA96D005E0DD6 /* MatchStatisticsView.swift in Sources */,
 				E3EE189E28DE9CD4005E0DD6 /* TypeExtension.swift in Sources */,
+				E3AC92C728DEF36900C1FF5D /* TopButtonsView.swift in Sources */,
+				E3AC92CB28DEF42C00C1FF5D /* BottomButtonsView.swift in Sources */,
 				E3EE18C028DEAAA6005E0DD6 /* EnlargedImageView.swift in Sources */,
+				E3AC92C328DEF2A100C1FF5D /* FunctionalityButtonsView.swift in Sources */,
 				E3EE18CC28DEAEBC005E0DD6 /* RefereeTimeOutView.swift in Sources */,
+				E3AC92E528DEFF4700C1FF5D /* ChangeSidesTeam2View.swift in Sources */,
 				E3EE18A628DE9DF4005E0DD6 /* StopwatchMinSec.swift in Sources */,
 				E3EE18BE28DEAA78005E0DD6 /* ScoresheetImageView.swift in Sources */,
+				E3AC92C928DEF3C400C1FF5D /* ViolationView.swift in Sources */,
+				E3AC92EF28DF01B900C1FF5D /* ScoringRowsTeam2view.swift in Sources */,
 				E3DD3F7A28DE959E008B47C4 /* Settings.swift in Sources */,
+				E3AC92F328DF059D00C1FF5D /* TeamListingTeam2View.swift in Sources */,
 				E3EE18D028DEAF85005E0DD6 /* IntroductionView.swift in Sources */,
+				E3AC92D128DEF51100C1FF5D /* TechnicalFoulView.swift in Sources */,
+				E3AC92CF28DEF4CB00C1FF5D /* CorrectionView.swift in Sources */,
 				E3DD3F7E28DE9658008B47C4 /* ArchivedMatch.swift in Sources */,
-				E3EE18D628DEB070005E0DD6 /* ScdorekeepingView.swift in Sources */,
+				E3EE18D628DEB070005E0DD6 /* ScorekeepingView.swift in Sources */,
 				E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */,
 				E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */,
 				E3EE189A28DE9C67005E0DD6 /* CheckToggleStyle.swift in Sources */,
 				E3EE189828DE9B6E005E0DD6 /* MailView.swift in Sources */,
 				E3EE189C28DE9C92005E0DD6 /* Styles.swift in Sources */,
 				E3DD3F7828DE9573008B47C4 /* ScoringImages.swift in Sources */,
+				E3AC92C128DEF24C00C1FF5D /* HomeView.swift in Sources */,
 				E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */,
+				E3AC92D928DEF66F00C1FF5D /* TimeOutsView.swift in Sources */,
 				E3EE18C228DEAAF6005E0DD6 /* StatisticsImageView.swift in Sources */,
 				E3DD3F6628DE881E008B47C4 /* Match.swift in Sources */,
 				E3EE18AC28DEA69F005E0DD6 /* ScoresheetAdminView.swift in Sources */,
 				E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */,
+				E3AC92DD28DEF6FA00C1FF5D /* BottomButtonsExtension.swift in Sources */,
 				E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */,
 				E3EE18D228DEAFBE005E0DD6 /* IntroductionOverviewView.swift in Sources */,
+				E3AC92E928DF00D800C1FF5D /* ScoringSectionTeam1View.swift in Sources */,
+				E3AC92E728DEFFD700C1FF5D /* PointsScoringTitlesView.swift in Sources */,
+				E3AC92CD28DEF49500C1FF5D /* PreMatchBriefingView.swift in Sources */,
 				E3EE18AA28DEA652005E0DD6 /* AdminView.swift in Sources */,
 				E3EE18B428DEA723005E0DD6 /* ArchivedMatchesListView.swift in Sources */,
 				E3DD3F6E28DE8921008B47C4 /* TimeoutImage.swift in Sources */,
@@ -362,6 +469,7 @@
 				E3EE18A428DE9D82005E0DD6 /* ScreenshotMaker.swift in Sources */,
 				E3DD3F7C28DE9623008B47C4 /* StorageManager.swift in Sources */,
 				E3EE18BA28DEA9DB005E0DD6 /* MatchStatisticsIIView.swift in Sources */,
+				E3AC92ED28DF017D00C1FF5D /* ScoringRowsTeam1View.swift in Sources */,
 				E3EE18C428DEAB5F005E0DD6 /* ActivityViewController.swift in Sources */,
 				E3EE18AE28DEA6BD005E0DD6 /* SettingsAdminView.swift in Sources */,
 				E3EE18B028DEA6DA005E0DD6 /* StatisticsAdminView.swift in Sources */,

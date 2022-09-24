@@ -44,9 +44,9 @@ struct EnlargedImageView: View {
     }
 }
 
-struct LargeScoresheetImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        EnlargedImageView()
-    }
-}
+//struct LargeScoresheetImageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        EnlargedImageView()
+//    }
+//}
 
