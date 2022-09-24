@@ -30,6 +30,14 @@
 		E3DD3F7E28DE9658008B47C4 /* ArchivedMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7D28DE9658008B47C4 /* ArchivedMatch.swift */; };
 		E3DD3F8028DE96A2008B47C4 /* Violation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7F28DE96A2008B47C4 /* Violation.swift */; };
 		E3EE189828DE9B6E005E0DD6 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE189728DE9B6E005E0DD6 /* MailView.swift */; };
+		E3EE189A28DE9C67005E0DD6 /* CheckToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE189928DE9C67005E0DD6 /* CheckToggleStyle.swift */; };
+		E3EE189C28DE9C92005E0DD6 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE189B28DE9C92005E0DD6 /* Styles.swift */; };
+		E3EE189E28DE9CD4005E0DD6 /* TypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE189D28DE9CD4005E0DD6 /* TypeExtension.swift */; };
+		E3EE18A028DE9D1C005E0DD6 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE189F28DE9D1C005E0DD6 /* UIImageExtension.swift */; };
+		E3EE18A228DE9D3B005E0DD6 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A128DE9D3B005E0DD6 /* ViewExtension.swift */; };
+		E3EE18A428DE9D82005E0DD6 /* ScreenshotMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A328DE9D82005E0DD6 /* ScreenshotMaker.swift */; };
+		E3EE18A628DE9DF4005E0DD6 /* StopwatchMinSec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A528DE9DF4005E0DD6 /* StopwatchMinSec.swift */; };
+		E3EE18A828DE9E58005E0DD6 /* ScreenshotMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A728DE9E58005E0DD6 /* ScreenshotMakerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +62,14 @@
 		E3DD3F7D28DE9658008B47C4 /* ArchivedMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedMatch.swift; sourceTree = "<group>"; };
 		E3DD3F7F28DE96A2008B47C4 /* Violation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Violation.swift; sourceTree = "<group>"; };
 		E3EE189728DE9B6E005E0DD6 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		E3EE189928DE9C67005E0DD6 /* CheckToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckToggleStyle.swift; sourceTree = "<group>"; };
+		E3EE189B28DE9C92005E0DD6 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		E3EE189D28DE9CD4005E0DD6 /* TypeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeExtension.swift; sourceTree = "<group>"; };
+		E3EE189F28DE9D1C005E0DD6 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		E3EE18A128DE9D3B005E0DD6 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		E3EE18A328DE9D82005E0DD6 /* ScreenshotMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMaker.swift; sourceTree = "<group>"; };
+		E3EE18A528DE9DF4005E0DD6 /* StopwatchMinSec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchMinSec.swift; sourceTree = "<group>"; };
+		E3EE18A728DE9E58005E0DD6 /* ScreenshotMakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMakerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +156,15 @@
 		E3DD3F5828DE772B008B47C4 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E3EE189928DE9C67005E0DD6 /* CheckToggleStyle.swift */,
 				E3DD3F7128DE8A31008B47C4 /* Contants.swift */,
+				E3EE18A328DE9D82005E0DD6 /* ScreenshotMaker.swift */,
+				E3EE18A728DE9E58005E0DD6 /* ScreenshotMakerView.swift */,
+				E3EE18A528DE9DF4005E0DD6 /* StopwatchMinSec.swift */,
+				E3EE189B28DE9C92005E0DD6 /* Styles.swift */,
+				E3EE189D28DE9CD4005E0DD6 /* TypeExtension.swift */,
+				E3EE189F28DE9D1C005E0DD6 /* UIImageExtension.swift */,
+				E3EE18A128DE9D3B005E0DD6 /* ViewExtension.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -229,11 +253,17 @@
 				E3DD3F6A28DE889C008B47C4 /* ScoresheetManager.swift in Sources */,
 				E3DD3F6C28DE88F0008B47C4 /* SheetManager.swift in Sources */,
 				E3DD3F8028DE96A2008B47C4 /* Violation.swift in Sources */,
+				E3EE18A228DE9D3B005E0DD6 /* ViewExtension.swift in Sources */,
+				E3EE18A028DE9D1C005E0DD6 /* UIImageExtension.swift in Sources */,
+				E3EE189E28DE9CD4005E0DD6 /* TypeExtension.swift in Sources */,
+				E3EE18A628DE9DF4005E0DD6 /* StopwatchMinSec.swift in Sources */,
 				E3DD3F7A28DE959E008B47C4 /* Settings.swift in Sources */,
 				E3DD3F7E28DE9658008B47C4 /* ArchivedMatch.swift in Sources */,
 				E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */,
 				E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */,
+				E3EE189A28DE9C67005E0DD6 /* CheckToggleStyle.swift in Sources */,
 				E3EE189828DE9B6E005E0DD6 /* MailView.swift in Sources */,
+				E3EE189C28DE9C92005E0DD6 /* Styles.swift in Sources */,
 				E3DD3F7828DE9573008B47C4 /* ScoringImages.swift in Sources */,
 				E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */,
 				E3DD3F6628DE881E008B47C4 /* Match.swift in Sources */,
@@ -241,6 +271,8 @@
 				E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */,
 				E3DD3F6E28DE8921008B47C4 /* TimeoutImage.swift in Sources */,
 				E3DD3F6428DE87EC008B47C4 /* Game.swift in Sources */,
+				E3EE18A828DE9E58005E0DD6 /* ScreenshotMakerView.swift in Sources */,
+				E3EE18A428DE9D82005E0DD6 /* ScreenshotMaker.swift in Sources */,
 				E3DD3F7C28DE9623008B47C4 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
