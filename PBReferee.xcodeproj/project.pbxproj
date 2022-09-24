@@ -38,6 +38,20 @@
 		E3EE18A428DE9D82005E0DD6 /* ScreenshotMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A328DE9D82005E0DD6 /* ScreenshotMaker.swift */; };
 		E3EE18A628DE9DF4005E0DD6 /* StopwatchMinSec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A528DE9DF4005E0DD6 /* StopwatchMinSec.swift */; };
 		E3EE18A828DE9E58005E0DD6 /* ScreenshotMakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A728DE9E58005E0DD6 /* ScreenshotMakerView.swift */; };
+		E3EE18AA28DEA652005E0DD6 /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18A928DEA652005E0DD6 /* AdminView.swift */; };
+		E3EE18AC28DEA69F005E0DD6 /* ScoresheetAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18AB28DEA69F005E0DD6 /* ScoresheetAdminView.swift */; };
+		E3EE18AE28DEA6BD005E0DD6 /* SettingsAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18AD28DEA6BD005E0DD6 /* SettingsAdminView.swift */; };
+		E3EE18B028DEA6DA005E0DD6 /* StatisticsAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18AF28DEA6D9005E0DD6 /* StatisticsAdminView.swift */; };
+		E3EE18B228DEA6F1005E0DD6 /* UserManualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18B128DEA6F1005E0DD6 /* UserManualView.swift */; };
+		E3EE18B428DEA723005E0DD6 /* ArchivedMatchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18B328DEA723005E0DD6 /* ArchivedMatchesListView.swift */; };
+		E3EE18B628DEA80D005E0DD6 /* ArchivedMatchRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18B528DEA80D005E0DD6 /* ArchivedMatchRowView.swift */; };
+		E3EE18B828DEA96D005E0DD6 /* MatchStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18B728DEA96D005E0DD6 /* MatchStatisticsView.swift */; };
+		E3EE18BA28DEA9DB005E0DD6 /* MatchStatisticsIIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18B928DEA9DB005E0DD6 /* MatchStatisticsIIView.swift */; };
+		E3EE18BC28DEAA33005E0DD6 /* ArchivedMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18BB28DEAA33005E0DD6 /* ArchivedMatchView.swift */; };
+		E3EE18BE28DEAA78005E0DD6 /* ScoresheetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18BD28DEAA78005E0DD6 /* ScoresheetImageView.swift */; };
+		E3EE18C028DEAAA6005E0DD6 /* EnlargedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18BF28DEAAA6005E0DD6 /* EnlargedImageView.swift */; };
+		E3EE18C228DEAAF6005E0DD6 /* StatisticsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18C128DEAAF6005E0DD6 /* StatisticsImageView.swift */; };
+		E3EE18C428DEAB5F005E0DD6 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE18C328DEAB5F005E0DD6 /* ActivityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +84,20 @@
 		E3EE18A328DE9D82005E0DD6 /* ScreenshotMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMaker.swift; sourceTree = "<group>"; };
 		E3EE18A528DE9DF4005E0DD6 /* StopwatchMinSec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchMinSec.swift; sourceTree = "<group>"; };
 		E3EE18A728DE9E58005E0DD6 /* ScreenshotMakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotMakerView.swift; sourceTree = "<group>"; };
+		E3EE18A928DEA652005E0DD6 /* AdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		E3EE18AB28DEA69F005E0DD6 /* ScoresheetAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresheetAdminView.swift; sourceTree = "<group>"; };
+		E3EE18AD28DEA6BD005E0DD6 /* SettingsAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAdminView.swift; sourceTree = "<group>"; };
+		E3EE18AF28DEA6D9005E0DD6 /* StatisticsAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsAdminView.swift; sourceTree = "<group>"; };
+		E3EE18B128DEA6F1005E0DD6 /* UserManualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManualView.swift; sourceTree = "<group>"; };
+		E3EE18B328DEA723005E0DD6 /* ArchivedMatchesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedMatchesListView.swift; sourceTree = "<group>"; };
+		E3EE18B528DEA80D005E0DD6 /* ArchivedMatchRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedMatchRowView.swift; sourceTree = "<group>"; };
+		E3EE18B728DEA96D005E0DD6 /* MatchStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStatisticsView.swift; sourceTree = "<group>"; };
+		E3EE18B928DEA9DB005E0DD6 /* MatchStatisticsIIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchStatisticsIIView.swift; sourceTree = "<group>"; };
+		E3EE18BB28DEAA33005E0DD6 /* ArchivedMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedMatchView.swift; sourceTree = "<group>"; };
+		E3EE18BD28DEAA78005E0DD6 /* ScoresheetImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresheetImageView.swift; sourceTree = "<group>"; };
+		E3EE18BF28DEAAA6005E0DD6 /* EnlargedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargedImageView.swift; sourceTree = "<group>"; };
+		E3EE18C128DEAAF6005E0DD6 /* StatisticsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsImageView.swift; sourceTree = "<group>"; };
+		E3EE18C328DEAB5F005E0DD6 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +176,19 @@
 		E3DD3F5728DE7716008B47C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E3EE18A928DEA652005E0DD6 /* AdminView.swift */,
+				E3EE18B328DEA723005E0DD6 /* ArchivedMatchesListView.swift */,
+				E3EE18B528DEA80D005E0DD6 /* ArchivedMatchRowView.swift */,
+				E3EE18BB28DEAA33005E0DD6 /* ArchivedMatchView.swift */,
+				E3EE18BF28DEAAA6005E0DD6 /* EnlargedImageView.swift */,
+				E3EE18B928DEA9DB005E0DD6 /* MatchStatisticsIIView.swift */,
+				E3EE18B728DEA96D005E0DD6 /* MatchStatisticsView.swift */,
+				E3EE18AB28DEA69F005E0DD6 /* ScoresheetAdminView.swift */,
+				E3EE18BD28DEAA78005E0DD6 /* ScoresheetImageView.swift */,
+				E3EE18AD28DEA6BD005E0DD6 /* SettingsAdminView.swift */,
+				E3EE18AF28DEA6D9005E0DD6 /* StatisticsAdminView.swift */,
+				E3EE18C128DEAAF6005E0DD6 /* StatisticsImageView.swift */,
+				E3EE18B128DEA6F1005E0DD6 /* UserManualView.swift */,
 				E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */,
 			);
 			path = View;
@@ -165,6 +206,7 @@
 				E3EE189D28DE9CD4005E0DD6 /* TypeExtension.swift */,
 				E3EE189F28DE9D1C005E0DD6 /* UIImageExtension.swift */,
 				E3EE18A128DE9D3B005E0DD6 /* ViewExtension.swift */,
+				E3EE18C328DEAB5F005E0DD6 /* ActivityViewController.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -250,13 +292,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3EE18B228DEA6F1005E0DD6 /* UserManualView.swift in Sources */,
 				E3DD3F6A28DE889C008B47C4 /* ScoresheetManager.swift in Sources */,
+				E3EE18BC28DEAA33005E0DD6 /* ArchivedMatchView.swift in Sources */,
+				E3EE18B628DEA80D005E0DD6 /* ArchivedMatchRowView.swift in Sources */,
 				E3DD3F6C28DE88F0008B47C4 /* SheetManager.swift in Sources */,
 				E3DD3F8028DE96A2008B47C4 /* Violation.swift in Sources */,
 				E3EE18A228DE9D3B005E0DD6 /* ViewExtension.swift in Sources */,
 				E3EE18A028DE9D1C005E0DD6 /* UIImageExtension.swift in Sources */,
+				E3EE18B828DEA96D005E0DD6 /* MatchStatisticsView.swift in Sources */,
 				E3EE189E28DE9CD4005E0DD6 /* TypeExtension.swift in Sources */,
+				E3EE18C028DEAAA6005E0DD6 /* EnlargedImageView.swift in Sources */,
 				E3EE18A628DE9DF4005E0DD6 /* StopwatchMinSec.swift in Sources */,
+				E3EE18BE28DEAA78005E0DD6 /* ScoresheetImageView.swift in Sources */,
 				E3DD3F7A28DE959E008B47C4 /* Settings.swift in Sources */,
 				E3DD3F7E28DE9658008B47C4 /* ArchivedMatch.swift in Sources */,
 				E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */,
@@ -266,14 +314,22 @@
 				E3EE189C28DE9C92005E0DD6 /* Styles.swift in Sources */,
 				E3DD3F7828DE9573008B47C4 /* ScoringImages.swift in Sources */,
 				E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */,
+				E3EE18C228DEAAF6005E0DD6 /* StatisticsImageView.swift in Sources */,
 				E3DD3F6628DE881E008B47C4 /* Match.swift in Sources */,
+				E3EE18AC28DEA69F005E0DD6 /* ScoresheetAdminView.swift in Sources */,
 				E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */,
 				E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */,
+				E3EE18AA28DEA652005E0DD6 /* AdminView.swift in Sources */,
+				E3EE18B428DEA723005E0DD6 /* ArchivedMatchesListView.swift in Sources */,
 				E3DD3F6E28DE8921008B47C4 /* TimeoutImage.swift in Sources */,
 				E3DD3F6428DE87EC008B47C4 /* Game.swift in Sources */,
 				E3EE18A828DE9E58005E0DD6 /* ScreenshotMakerView.swift in Sources */,
 				E3EE18A428DE9D82005E0DD6 /* ScreenshotMaker.swift in Sources */,
 				E3DD3F7C28DE9623008B47C4 /* StorageManager.swift in Sources */,
+				E3EE18BA28DEA9DB005E0DD6 /* MatchStatisticsIIView.swift in Sources */,
+				E3EE18C428DEAB5F005E0DD6 /* ActivityViewController.swift in Sources */,
+				E3EE18AE28DEA6BD005E0DD6 /* SettingsAdminView.swift in Sources */,
+				E3EE18B028DEA6DA005E0DD6 /* StatisticsAdminView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
