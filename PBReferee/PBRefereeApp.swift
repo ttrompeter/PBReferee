@@ -58,13 +58,13 @@ struct PBRefereeApp: App {
             switch newScenePhase {
             case .active:
                 // The scene is in the foreground and interactive.
-                print("newScenePhase is .active")
+                print("newScenePhase is .active = in the foreground and interactive")
             case .inactive:
                 // The scene is in the foreground but should pause its work.
-                print("newScenePhase is .inactive")
+                print("newScenePhase is .inactive - in the foreground but should pause its work")
             case .background:
                 // The scene isn’t currently visible in the UI.
-                print("newScenePhase is .background")
+                print("newScenePhase is .background - isn’t currently visible in the UI")
             @unknown default:
                 break
             }

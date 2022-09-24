@@ -51,9 +51,9 @@ struct ArchivedMatchRowView: View {
     }
 }
 
-struct ArchivedMatchRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        ArchivedMatchRowView(archivedMatch: ArchivedMatch())
-    }
-}
+//struct ArchivedMatchRowView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ArchivedMatchRowView(archivedMatch: ArchivedMatch())
+//    }
+//}
 

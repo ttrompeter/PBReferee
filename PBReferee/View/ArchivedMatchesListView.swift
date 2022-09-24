@@ -58,9 +58,10 @@ struct ArchivedMatchesListView: View {
         } // End Top VStak
     }
 }
-struct ArchivedMathesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        ArchivedMatchesListView()
-    }
-}
+
+//struct ArchivedMathesListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ArchivedMatchesListView()
+//    }
+//}
 
