@@ -213,6 +213,7 @@ class RealmManager: ObservableObject {
     
     // TODO: - This is just for development - delete for production
     func createNewDevelopmentMatch () -> Match {
+        print("Starting createNewDevelopmentMatch() in RealmManager")
         // TODO: - For production remove the values generated from seed data or hand coded and use default values
         let newMatch = Match()
         if let realm = realm {

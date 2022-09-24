@@ -18,7 +18,7 @@ struct ScoringSectionTeam1View: View {
             
             VStack (spacing: 0) {
                 PointsScoringTitlesView(match: match)
-                ScoringRowsTeam1View()
+                ScoringRowsTeam1View(match: match)
                 ChangeSidesTeam1View(match: match)
                 
                 //                    PointsFirstRowTeam1View(match: match)

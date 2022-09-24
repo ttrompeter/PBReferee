@@ -24,8 +24,7 @@ struct PBRefereeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            //DataLoadView()
-            WelcomeView()
+            DataLoadView()
                 .environmentObject(sheetManager)
                 .environmentObject(scoresheetManager)
                 .environmentObject(realmManager)

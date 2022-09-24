@@ -17,7 +17,7 @@ struct ScoringSectionTeam2View: View {
         HStack (alignment: .top, spacing: 0) {
             VStack (spacing: 0) {
                 PointsScoringTitlesView(match: match)
-                ScoringRowsTeam2View()
+                ScoringRowsTeam2View(match: match)
                 ChangeSidesTeam2View(match: match)
                 
                 //                    PointsFirstRowTeam2View(match: match)

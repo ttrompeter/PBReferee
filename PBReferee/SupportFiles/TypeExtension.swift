@@ -15,7 +15,7 @@ extension UIColor {
     static let mintleaf = UIColor(named: "mintleaf")!
     static let graygreen = UIColor(named: "graygreen")!
     static let grayslate = UIColor(named: "grayslate")!
-    static let pomegranate = UIColor(named: "pomagranate")!
+    static let pomegranate = UIColor(named: "pomegranate")!
     static let silver = UIColor(named: "silver")!
     static let slate = UIColor(named: "slate")!
     static let yarrow = UIColor(named: "yarrow")!

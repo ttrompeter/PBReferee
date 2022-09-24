@@ -22,7 +22,7 @@ struct DataLoadView: View {
     
     var body: some View {
         
-        NavigationStack {
+        NavigationView {
             ZStack {
                 Rectangle()
                     .frame(width: CGFloat(660), height: CGFloat(410))
@@ -32,13 +32,26 @@ struct DataLoadView: View {
                 VStack {
                     HStack (spacing: 40) {
                         
+                        // The API now contains a value-label syntax with the label hosting the content’s view for the link and the value containing the destination view builder.
                         //NavigationLink(value: <#T##(Decodable & Encodable & Hashable)?#>, label: <#T##() -> _#>)
                         //NavigationLink(<#T##title: StringProtocol##StringProtocol#>, value: <#T##(Decodable & Encodable & Hashable)?#>)
+                        //NavigationLink(value: HomeView(match: openMatch)) { }
                         
+//                        NavigationStack(path: $path) {
+//                            List {
+//                                NavigationLink("Purple", value: .purple)
+//                                NavigationLink("Pink", value: .pink)
+//                                NavigationLink("Orange", value: .orange)
+//                            }
+//                            .navigationDestination(for: Color.self) { color in
+//                                ColorDetail(color: color)
+//                            }
+//                        }
                         
                         NavigationLink(destination: HomeView(match: openMatch).environmentObject(sheetManager).environmentObject(scoresheetManager).environmentObject(realmManager), isActive: $isShowHomeOpenMatch) { }
                         
                         NavigationLink(destination: HomeView(match: newMatch).environmentObject(sheetManager).environmentObject(scoresheetManager).environmentObject(realmManager), isActive: $isShowHomeNewMatch) { }
+                        
                     }
                 }
             }  // End ZStack
@@ -63,7 +76,7 @@ struct DataLoadView: View {
                 }
             }
         }  // End NavigationView
-        //.navigationViewStyle(.stack)
+        .navigationViewStyle(.stack)
         .statusBar(hidden: true)
     }
 }

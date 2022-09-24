@@ -103,9 +103,9 @@ struct Constants {
     static var BOX_LEFT_ONLY_BACK_SLASH = "boxleftonlybackslash"
     static var BOX_LEFT_ONLY_FORWARD_SLASH = "boxleftonlyfwdslash"
     
-    static var BOX_BOTTOM_LEFT = "boxbottomleft"
-    static var BOX_BOTTOM_LEFT_BACK_SLASH = "boxbottomleftbackslash"
-    static var BOX_BOTTOM_LEFT_FORWARD_SLASH = "boxbottomleftbackslash"
+    static var BOX_BOTTOM_LEFT = "boxbottomrowleft"
+    static var BOX_BOTTOM_LEFT_BACK_SLASH = "boxbottomrowleftbackslash"
+    static var BOX_BOTTOM_LEFT_FORWARD_SLASH = "boxbottomrowleftbackslash"
    
     static var BOX_RIGHT_END = "boxrightend"
     static var BOX_RIGHT_END_BACK_SLASH = "boxrightendbackslash"

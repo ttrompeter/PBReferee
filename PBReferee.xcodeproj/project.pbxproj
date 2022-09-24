@@ -31,9 +31,14 @@
 		E3AC92E928DF00D800C1FF5D /* ScoringSectionTeam1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92E828DF00D800C1FF5D /* ScoringSectionTeam1View.swift */; };
 		E3AC92EB28DF012600C1FF5D /* ScoringSectionTeam2view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92EA28DF012600C1FF5D /* ScoringSectionTeam2view.swift */; };
 		E3AC92ED28DF017D00C1FF5D /* ScoringRowsTeam1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92EC28DF017D00C1FF5D /* ScoringRowsTeam1View.swift */; };
-		E3AC92EF28DF01B900C1FF5D /* ScoringRowsTeam2view.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2view.swift */; };
+		E3AC92EF28DF01B900C1FF5D /* ScoringRowsTeam2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2View.swift */; };
 		E3AC92F128DF052F00C1FF5D /* TeamListingTeam1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92F028DF052F00C1FF5D /* TeamListingTeam1View.swift */; };
 		E3AC92F328DF059D00C1FF5D /* TeamListingTeam2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92F228DF059D00C1FF5D /* TeamListingTeam2View.swift */; };
+		E3AC92F528DF07E000C1FF5D /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92F428DF07E000C1FF5D /* AlertItem.swift */; };
+		E3AC92F728DF086B00C1FF5D /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92F628DF086B00C1FF5D /* TextFieldAlert.swift */; };
+		E3AC92F928DF08C000C1FF5D /* MatchViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92F828DF08C000C1FF5D /* MatchViewExtension.swift */; };
+		E3AC92FB28DF094900C1FF5D /* PointScoredExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92FA28DF094900C1FF5D /* PointScoredExtension.swift */; };
+		E3AC92FD28DF097B00C1FF5D /* SideOutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92FC28DF097B00C1FF5D /* SideOutExtension.swift */; };
 		E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4994428DE75D7003EB9B7 /* PBRefereeApp.swift */; };
 		E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */; };
 		E3C4994928DE75D8003EB9B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C4994828DE75D8003EB9B7 /* Assets.xcassets */; };
@@ -115,9 +120,14 @@
 		E3AC92E828DF00D800C1FF5D /* ScoringSectionTeam1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSectionTeam1View.swift; sourceTree = "<group>"; };
 		E3AC92EA28DF012600C1FF5D /* ScoringSectionTeam2view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringSectionTeam2view.swift; sourceTree = "<group>"; };
 		E3AC92EC28DF017D00C1FF5D /* ScoringRowsTeam1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringRowsTeam1View.swift; sourceTree = "<group>"; };
-		E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringRowsTeam2view.swift; sourceTree = "<group>"; };
+		E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringRowsTeam2View.swift; sourceTree = "<group>"; };
 		E3AC92F028DF052F00C1FF5D /* TeamListingTeam1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListingTeam1View.swift; sourceTree = "<group>"; };
 		E3AC92F228DF059D00C1FF5D /* TeamListingTeam2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListingTeam2View.swift; sourceTree = "<group>"; };
+		E3AC92F428DF07E000C1FF5D /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		E3AC92F628DF086B00C1FF5D /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
+		E3AC92F828DF08C000C1FF5D /* MatchViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewExtension.swift; sourceTree = "<group>"; };
+		E3AC92FA28DF094900C1FF5D /* PointScoredExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointScoredExtension.swift; sourceTree = "<group>"; };
+		E3AC92FC28DF097B00C1FF5D /* SideOutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideOutExtension.swift; sourceTree = "<group>"; };
 		E3C4994128DE75D7003EB9B7 /* PBReferee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBReferee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C4994428DE75D7003EB9B7 /* PBRefereeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBRefereeApp.swift; sourceTree = "<group>"; };
 		E3C4994628DE75D7003EB9B7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -279,7 +289,7 @@
 				E3EE18AB28DEA69F005E0DD6 /* ScoresheetAdminView.swift */,
 				E3EE18BD28DEAA78005E0DD6 /* ScoresheetImageView.swift */,
 				E3AC92EC28DF017D00C1FF5D /* ScoringRowsTeam1View.swift */,
-				E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2view.swift */,
+				E3AC92EE28DF01B900C1FF5D /* ScoringRowsTeam2View.swift */,
 				E3AC92E828DF00D800C1FF5D /* ScoringSectionTeam1View.swift */,
 				E3AC92EA28DF012600C1FF5D /* ScoringSectionTeam2view.swift */,
 				E3EE18AD28DEA6BD005E0DD6 /* SettingsAdminView.swift */,
@@ -303,18 +313,23 @@
 		E3DD3F5828DE772B008B47C4 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E3EE18C328DEAB5F005E0DD6 /* ActivityViewController.swift */,
+				E3AC92F428DF07E000C1FF5D /* AlertItem.swift */,
 				E3AC92DC28DEF6FA00C1FF5D /* BottomButtonsExtension.swift */,
 				E3EE189928DE9C67005E0DD6 /* CheckToggleStyle.swift */,
 				E3DD3F7128DE8A31008B47C4 /* Contants.swift */,
+				E3AC92FA28DF094900C1FF5D /* PointScoredExtension.swift */,
 				E3EE18C728DEADA2005E0DD6 /* PDFKitView.swift */,
 				E3EE18A328DE9D82005E0DD6 /* ScreenshotMaker.swift */,
 				E3EE18A728DE9E58005E0DD6 /* ScreenshotMakerView.swift */,
+				E3AC92FC28DF097B00C1FF5D /* SideOutExtension.swift */,
 				E3EE18A528DE9DF4005E0DD6 /* StopwatchMinSec.swift */,
 				E3EE189B28DE9C92005E0DD6 /* Styles.swift */,
+				E3AC92F628DF086B00C1FF5D /* TextFieldAlert.swift */,
 				E3EE189D28DE9CD4005E0DD6 /* TypeExtension.swift */,
 				E3EE189F28DE9D1C005E0DD6 /* UIImageExtension.swift */,
 				E3EE18A128DE9D3B005E0DD6 /* ViewExtension.swift */,
-				E3EE18C328DEAB5F005E0DD6 /* ActivityViewController.swift */,
+				E3AC92F828DF08C000C1FF5D /* MatchViewExtension.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -409,6 +424,7 @@
 				E3AC92EB28DF012600C1FF5D /* ScoringSectionTeam2view.swift in Sources */,
 				E3AC92F128DF052F00C1FF5D /* TeamListingTeam1View.swift in Sources */,
 				E3DD3F6A28DE889C008B47C4 /* ScoresheetManager.swift in Sources */,
+				E3AC92FD28DF097B00C1FF5D /* SideOutExtension.swift in Sources */,
 				E3EE18BC28DEAA33005E0DD6 /* ArchivedMatchView.swift in Sources */,
 				E3EE18B628DEA80D005E0DD6 /* ArchivedMatchRowView.swift in Sources */,
 				E3AC92DF28DEF75B00C1FF5D /* MatchSetupView.swift in Sources */,
@@ -428,13 +444,15 @@
 				E3AC92C728DEF36900C1FF5D /* TopButtonsView.swift in Sources */,
 				E3AC92CB28DEF42C00C1FF5D /* BottomButtonsView.swift in Sources */,
 				E3EE18C028DEAAA6005E0DD6 /* EnlargedImageView.swift in Sources */,
+				E3AC92F728DF086B00C1FF5D /* TextFieldAlert.swift in Sources */,
+				E3AC92F528DF07E000C1FF5D /* AlertItem.swift in Sources */,
 				E3AC92C328DEF2A100C1FF5D /* FunctionalityButtonsView.swift in Sources */,
 				E3EE18CC28DEAEBC005E0DD6 /* RefereeTimeOutView.swift in Sources */,
 				E3AC92E528DEFF4700C1FF5D /* ChangeSidesTeam2View.swift in Sources */,
 				E3EE18A628DE9DF4005E0DD6 /* StopwatchMinSec.swift in Sources */,
 				E3EE18BE28DEAA78005E0DD6 /* ScoresheetImageView.swift in Sources */,
 				E3AC92C928DEF3C400C1FF5D /* ViolationView.swift in Sources */,
-				E3AC92EF28DF01B900C1FF5D /* ScoringRowsTeam2view.swift in Sources */,
+				E3AC92EF28DF01B900C1FF5D /* ScoringRowsTeam2View.swift in Sources */,
 				E3DD3F7A28DE959E008B47C4 /* Settings.swift in Sources */,
 				E3AC92F328DF059D00C1FF5D /* TeamListingTeam2View.swift in Sources */,
 				E3EE18D028DEAF85005E0DD6 /* IntroductionView.swift in Sources */,
@@ -448,6 +466,7 @@
 				E3EE189828DE9B6E005E0DD6 /* MailView.swift in Sources */,
 				E3EE189C28DE9C92005E0DD6 /* Styles.swift in Sources */,
 				E3DD3F7828DE9573008B47C4 /* ScoringImages.swift in Sources */,
+				E3AC92FB28DF094900C1FF5D /* PointScoredExtension.swift in Sources */,
 				E3AC92C128DEF24C00C1FF5D /* HomeView.swift in Sources */,
 				E3C4994528DE75D7003EB9B7 /* PBRefereeApp.swift in Sources */,
 				E3AC92D928DEF66F00C1FF5D /* TimeOutsView.swift in Sources */,
@@ -455,6 +474,7 @@
 				E3DD3F6628DE881E008B47C4 /* Match.swift in Sources */,
 				E3EE18AC28DEA69F005E0DD6 /* ScoresheetAdminView.swift in Sources */,
 				E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */,
+				E3AC92F928DF08C000C1FF5D /* MatchViewExtension.swift in Sources */,
 				E3AC92DD28DEF6FA00C1FF5D /* BottomButtonsExtension.swift in Sources */,
 				E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */,
 				E3EE18D228DEAFBE005E0DD6 /* IntroductionOverviewView.swift in Sources */,

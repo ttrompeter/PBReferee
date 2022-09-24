@@ -5,9 +5,12 @@
 //  Created by Tom Trompeter on 9/21/22.
 //
 
+import RealmSwift
 import SwiftUI
 
 struct ScoringRowsTeam1View: View {
+    
+    @ObservedRealmObject var match: Match
     
     @State private var matchFormat = 2
     @State private var showSideOutImage1 = false
@@ -24,148 +27,148 @@ struct ScoringRowsTeam1View: View {
 
     
     @State var scoreImagesRow1 = [
-        ScoreImage(boxImageName: "boxleft", boxNumber: "1"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "2"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "3"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "4"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "5"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "6"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "7"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "8"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "9"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "10"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "11"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "12"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "13"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "14"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "15"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "16"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "17"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "18"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "19"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "20"),
-        ScoreImage(boxImageName: "boxrightend", boxNumber: "21")
+        ScoreImage(boxImageName: "boxleft", boxNumber: 1),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 2),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 3),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 4),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 5),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 6),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 7),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 8),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 9),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 10),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 11),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 12),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 13),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 14),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 15),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 16),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 17),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 18),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 19),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 20),
+        ScoreImage(boxImageName: "boxrightend", boxNumber: 21)
     ]
     
     @State var scoreImagesRow2 = [
         
-        ScoreImage(boxImageName: "boxleft", boxNumber: "1"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "2"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "3"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "4"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "5"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "6"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "7"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "8"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "9"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "10"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "11"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "12"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "13"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "14"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "15"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "16"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "17"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "18"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "19"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "20"),
-        ScoreImage(boxImageName: "boxrightend", boxNumber: "21")
+        ScoreImage(boxImageName: "boxleft", boxNumber: 1),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 2),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 3),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 4),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 5),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 6),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 7),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 8),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 9),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 10),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 11),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 12),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 13),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 14),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 15),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 16),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 17),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 18),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 19),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 20),
+        ScoreImage(boxImageName: "boxrightend", boxNumber: 21)
     ]
     
     @State var scoreImagesRow3 = [
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "1"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "2"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "3") ,
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "4"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "5"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "6"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "7"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "8"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "9"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "10"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "11"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "12"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "13"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "14"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "15"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "16"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "17"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "18"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "19"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "20"),
-        ScoreImage(boxImageName: "box", boxNumber: "21")
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 1),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 2),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 3),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 4),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 5),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 6),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 7),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 8),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 9),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 10),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 11),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 12),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 13),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 14),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 15),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 16),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 17),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 18),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 19),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 20),
+        ScoreImage(boxImageName: "box", boxNumber: 21)
     ]
     
     @State var scoreImagesRow3A = [
-        ScoreImage(boxImageName: "boxleft", boxNumber: "1"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "2"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "3") ,
-        ScoreImage(boxImageName: "boxleft", boxNumber: "4"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "5"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "6"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "7"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "8"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "9"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "10"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "11"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "12"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "13"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "14"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "15"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "16"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "17"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "18"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "19"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "20"),
-        ScoreImage(boxImageName: "boxrightend", boxNumber: "21")
+        ScoreImage(boxImageName: "boxleft", boxNumber: 1),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 2),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 3),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 4),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 5),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 6),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 7),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 8),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 9),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 10),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 11),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 12),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 13),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 14),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 15),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 16),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 17),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 18),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 19),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 20),
+        ScoreImage(boxImageName: "boxrightend", boxNumber: 21)
     ]
     
     @State var scoreImagesRow4 = [
-        ScoreImage(boxImageName: "boxleft", boxNumber: "1"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "2"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "3"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "4"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "5"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "6"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "7"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "8"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "9"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "10"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "11"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "12"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "13"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "14"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "15"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "16"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "17"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "18"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "19"),
-        ScoreImage(boxImageName: "boxleft", boxNumber: "20"),
-        ScoreImage(boxImageName: "boxrightend", boxNumber: "21", isShowSideOut: false, sideOutImageName: "sideoutright")
+        ScoreImage(boxImageName: "boxleft", boxNumber: 1),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 2),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 3),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 4),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 5),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 6),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 7),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 8),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 9),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 10),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 11),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 12),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 13),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 14),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 15),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 16),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 17),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 18),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 19),
+        ScoreImage(boxImageName: "boxleft", boxNumber: 20),
+        ScoreImage(boxImageName: "boxrightend", boxNumber: 21)
     ]
     
     @State var scoreImagesRow5 = [
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "1"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "2"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "3"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "4"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "5"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "6"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "7"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "8"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "9"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "10"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "11"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "12"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "13"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "14"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "15"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "16"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "17"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "18"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "19"),
-        ScoreImage(boxImageName: "boxbottomleft", boxNumber: "20"),
-        ScoreImage(boxImageName: "box", boxNumber: "21", isShowSideOut: false, sideOutImageName: "sideoutright")
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 1),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 2),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 3),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 4),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 5),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 6),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 7),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 8),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 9),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 10),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 11),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 12),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 13),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 14),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 15),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 16),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 17),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 18),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 19),
+        ScoreImage(boxImageName: "boxbottomrowleft", boxNumber: 20),
+        ScoreImage(boxImageName: "box", boxNumber: 21)
     ]
     
     @State var timeouts2ImagesRow1 = [
@@ -181,7 +184,7 @@ struct ScoringRowsTeam1View: View {
     ]
     
     @State var timeouts2ImagesRow3 = [
-        TimeoutImage(boxImageName: "boxbottomleft", boxNumber: "1", isShowScore: false, score: "1/6"),
+        TimeoutImage(boxImageName: "boxbottomrowleft", boxNumber: "1", isShowScore: false, score: "1/6"),
         TimeoutImage(boxImageName: "box", boxNumber: "2", isShowScore: false, score: "2/5"),
         TimeoutImage(boxImageName: "boxblank", boxNumber: "", isShowScore: false, score: "")
     ]
@@ -199,7 +202,7 @@ struct ScoringRowsTeam1View: View {
     ]
     
     @State var timeouts2ImagesRow5 = [
-        TimeoutImage(boxImageName: "boxbottomleft", boxNumber: "1", isShowScore: false, score: "1/6"),
+        TimeoutImage(boxImageName: "boxbottomrowleft", boxNumber: "1", isShowScore: false, score: "1/6"),
         TimeoutImage(boxImageName: "box", boxNumber: "2", isShowScore: false, score: "2/5"),
         TimeoutImage(boxImageName: "boxblank", boxNumber: "", isShowScore: false, score: "")
     ]
@@ -217,8 +220,8 @@ struct ScoringRowsTeam1View: View {
     ]
     
     @State var timeouts3ImagesRow3 = [
-        TimeoutImage(boxImageName: "boxbottomleft", boxNumber: "1", isShowScore: false, score: "1/6"),
-        TimeoutImage(boxImageName: "boxbottomleft", boxNumber: "2", isShowScore: false, score: "4/3"),
+        TimeoutImage(boxImageName: "boxbottomrowleft", boxNumber: "1", isShowScore: false, score: "1/6"),
+        TimeoutImage(boxImageName: "boxbottomrowleft", boxNumber: "2", isShowScore: false, score: "4/3"),
         TimeoutImage(boxImageName: "box", boxNumber: "3", isShowScore: false, score: "2/5")
     ]
     
@@ -235,8 +238,8 @@ struct ScoringRowsTeam1View: View {
     ]
     
     @State var timeouts3ImagesRow5 = [
-        TimeoutImage(boxImageName: "boxbottomleft", boxNumber: "1", isShowScore: false, score: "1/6"),
-        TimeoutImage(boxImageName: "boxbottomleft", boxNumber: "2", isShowScore: false, score: "4/3"),
+        TimeoutImage(boxImageName: "boxbottomrowleft", boxNumber: "1", isShowScore: false, score: "1/6"),
+        TimeoutImage(boxImageName: "boxbottomrowleft", boxNumber: "2", isShowScore: false, score: "4/3"),
         TimeoutImage(boxImageName: "box", boxNumber: "3", isShowScore: false, score: "2/5")
     ]
     
@@ -267,7 +270,7 @@ struct ScoringRowsTeam1View: View {
                                 .resizable()
                                 .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
                         }
-                        Text(scoreimage.boxNumber)
+                        Text("\(scoreimage.boxNumber)")
                             .font(.callout)
                             .foregroundColor(.secondary).opacity(0.8)
                     }
@@ -316,7 +319,7 @@ struct ScoringRowsTeam1View: View {
                                 .resizable()
                                 .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
                         }
-                        Text(scoreimage.boxNumber)
+                        Text("\(scoreimage.boxNumber)")
                             .font(.callout)
                             .foregroundColor(.secondary).opacity(0.8)
                     }
@@ -366,7 +369,7 @@ struct ScoringRowsTeam1View: View {
                                     .resizable()
                                     .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
                             }
-                            Text(scoreimage.boxNumber)
+                            Text("\(scoreimage.boxNumber)")
                                 .font(.callout)
                                 .foregroundColor(.secondary).opacity(0.8)
                         }
@@ -417,7 +420,7 @@ struct ScoringRowsTeam1View: View {
                                     .resizable()
                                     .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
                             }
-                            Text(scoreimage.boxNumber)
+                            Text("\(scoreimage.boxNumber)")
                                 .font(.callout)
                                 .foregroundColor(.secondary).opacity(0.8)
                         }
@@ -466,7 +469,7 @@ struct ScoringRowsTeam1View: View {
                                     .resizable()
                                     .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
                             }
-                            Text(scoreimage.boxNumber)
+                            Text("\(scoreimage.boxNumber)")
                                 .font(.callout)
                                 .foregroundColor(.secondary).opacity(0.8)
                         }
@@ -514,7 +517,7 @@ struct ScoringRowsTeam1View: View {
                                     .resizable()
                                     .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
                             }
-                            Text(scoreimage.boxNumber)
+                            Text("\(scoreimage.boxNumber)")
                                 .font(.callout)
                                 .foregroundColor(.secondary).opacity(0.8)
                         }
@@ -547,9 +550,9 @@ struct ScoringRowsTeam1View: View {
 
 
 
-struct ScoringRowsTeam1View_Previews: PreviewProvider {
-    static var previews: some View {
-        ScoringRowsTeam1View()
-    }
-}
+//struct ScoringRowsTeam1View_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ScoringRowsTeam1View()
+//    }
+//}
 
