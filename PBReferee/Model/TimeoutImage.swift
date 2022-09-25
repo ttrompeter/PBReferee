@@ -10,6 +10,7 @@ import SwiftUI
 
 class TimeOutImage: Object, ObjectKeyIdentifiable {
     
+    // This replaces the old timeoutImage file
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var rowNumber: Int = 0
     @Persisted var boxImageName: String

@@ -89,8 +89,8 @@ extension BottomButtonsView {
         
         realmManager.deleteGames()
         realmManager.addNewDevelopmentGames()
-        realmManager.deleteScoringImages()
-        realmManager.addNewScoringImages()
+        //realmManager.deleteScoringImages()
+        //realmManager.addNewScoringImages()
         realmManager.deleteViolations()
         
         // Reset the scoresheetManager variables to default values
@@ -194,8 +194,8 @@ extension BottomButtonsView {
 
         realmManager.deleteGames()
         realmManager.addNewDevelopmentGames()
-        realmManager.deleteScoringImages()
-        realmManager.addNewScoringImages()
+        //realmManager.deleteScoringImages()
+        //realmManager.addNewScoringImages()
         realmManager.deleteViolations()
 
         // Reset the scoresheetManager variables to default values

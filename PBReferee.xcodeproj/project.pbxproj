@@ -55,7 +55,6 @@
 		E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */; };
 		E3DD3F6A28DE889C008B47C4 /* ScoresheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6928DE889C008B47C4 /* ScoresheetManager.swift */; };
 		E3DD3F6C28DE88F0008B47C4 /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6B28DE88F0008B47C4 /* SheetManager.swift */; };
-		E3DD3F6E28DE8921008B47C4 /* TimeoutImageX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6D28DE8921008B47C4 /* TimeoutImageX.swift */; };
 		E3DD3F7028DE8982008B47C4 /* PickleballRulebook2022.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E3DD3F6F28DE8982008B47C4 /* PickleballRulebook2022.pdf */; };
 		E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7128DE8A31008B47C4 /* Contants.swift */; };
 		E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */; };
@@ -146,7 +145,6 @@
 		E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreImage.swift; sourceTree = "<group>"; };
 		E3DD3F6928DE889C008B47C4 /* ScoresheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresheetManager.swift; sourceTree = "<group>"; };
 		E3DD3F6B28DE88F0008B47C4 /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
-		E3DD3F6D28DE8921008B47C4 /* TimeoutImageX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeoutImageX.swift; sourceTree = "<group>"; };
 		E3DD3F6F28DE8982008B47C4 /* PickleballRulebook2022.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PickleballRulebook2022.pdf; sourceTree = "<group>"; };
 		E3DD3F7128DE8A31008B47C4 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 				E3DD3F7B28DE9623008B47C4 /* StorageManager.swift */,
 				E32B4FDE28DFF18B005383CD /* TimeOutImage.swift */,
 				E32B4FE228E0C398005383CD /* TimeOutImageModel.swift */,
-				E3DD3F6D28DE8921008B47C4 /* TimeoutImageX.swift */,
 				E3DD3F7F28DE96A2008B47C4 /* Violation.swift */,
 			);
 			path = Model;
@@ -499,7 +496,6 @@
 				E3AC92CD28DEF49500C1FF5D /* PreMatchBriefingView.swift in Sources */,
 				E3EE18AA28DEA652005E0DD6 /* AdminView.swift in Sources */,
 				E3EE18B428DEA723005E0DD6 /* ArchivedMatchesListView.swift in Sources */,
-				E3DD3F6E28DE8921008B47C4 /* TimeoutImageX.swift in Sources */,
 				E3DD3F6428DE87EC008B47C4 /* Game.swift in Sources */,
 				E3EE18A828DE9E58005E0DD6 /* ScreenshotMakerView.swift in Sources */,
 				E3EE18A428DE9D82005E0DD6 /* ScreenshotMaker.swift in Sources */,
