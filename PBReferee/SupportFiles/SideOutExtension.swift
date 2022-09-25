@@ -17,6 +17,184 @@ extension MatchView {
         scoresheetManager.lastActionGameNumber = match.currentGameNumber
         scoresheetManager.lastActionIsSecondServer = match.isSecondServer
         scoresheetManager.lastActionPlayerNumber = match.servingPlayerNumber
+        var pointNumber = 0
+        
+        // Add a timeout to the timeout count for the appropriate team
+        if match.servingPlayerNumber == 1 || match.servingPlayerNumber == 2 {
+            $match.games[match.currentGameArrayIndex].sideOutsTeam1.wrappedValue += 1
+            pointNumber = match.games[match.currentGameArrayIndex].player1Points +  match.games[match.currentGameArrayIndex].player2Points
+        } else if match.servingPlayerNumber == 1 || match.servingPlayerNumber == 2 {
+            $match.games[match.currentGameArrayIndex].sideOutsTeam2.wrappedValue += 1
+            pointNumber = match.games[match.currentGameArrayIndex].player3Points +  match.games[match.currentGameArrayIndex].player4Points
+        }
+
+        // Set the proper image value for the side out
+        if match.currentGameNumber == 1 {
+            print("game number in pointScored: \(match.currentGameNumber)")
+            // Game 1
+            if match.isTeam1Serving {
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber - 1].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            } else {
+                // Team 2 was serving
+                // Points index row numbers for Team 2 Game 1 are 105 - 125
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber + 105].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber + 105].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber + 104].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            }
+        } else if match.currentGameNumber == 2 {
+            print("game number in pointScored: \(match.currentGameNumber)")
+            // Game 1
+            if match.isTeam1Serving {
+                // Points index row numbers for Team 1 Game 2 are 21 - 41
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber + 20].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber + 20].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber + 20].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            } else {
+                // Team 2 was serving
+                // Points index row numbers for Team 2 Game 2 are 126 - 146
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber + 125].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber + 125].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber + 125].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            }
+        } else if match.currentGameNumber == 3 {
+            print("game number in pointScored: \(match.currentGameNumber)")
+            if match.selectedMatchFormat == 2 {
+                // Game 3
+                if match.isTeam1Serving {
+                    // Points index row numbers for Team 1 Game 3 are 42 - 62
+                    if pointNumber == 0 {
+                        // Team did not score a point yet so the side out image is on the left of the score box
+                        $match.points[pointNumber + 41].isShowSideOut.wrappedValue = true
+                        $match.points[pointNumber + 41].sideOutImageName.wrappedValue = "sideoutleft"
+                    } else {
+                        print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                        $match.points[pointNumber + 41].isShowSideOut.wrappedValue = true
+                        print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                    }
+                } else {
+                    // Team 2 was serving
+                    // Points index row numbers for Team 2 Game 3 are 147 - 167
+                    if pointNumber == 0 {
+                        // Team did not score a point yet so the side out image is on the left of the score box
+                        $match.points[pointNumber + 146].isShowSideOut.wrappedValue = true
+                        $match.points[pointNumber + 146].sideOutImageName.wrappedValue = "sideoutleft"
+                    } else {
+                        print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                        $match.points[pointNumber + 146].isShowSideOut.wrappedValue = true
+                        print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                    }
+                }
+            } else if match.selectedMatchFormat == 3 {
+                // Game 3A
+                if match.isTeam1Serving {
+                    // Points index row numbers for Team 1 Game 3A are 210 - 230
+                    if pointNumber == 0 {
+                        // Team did not score a point yet so the side out image is on the left of the score box
+                        $match.points[pointNumber + 209].isShowSideOut.wrappedValue = true
+                        $match.points[pointNumber + 209].sideOutImageName.wrappedValue = "sideoutleft"
+                    } else {
+                        print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                        $match.points[pointNumber + 209].isShowSideOut.wrappedValue = true
+                        print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                    }
+                } else {
+                    // Team 2 was serving
+                    // Points index row numbers for Team 2 Game 3A are 231 - 251
+                    if pointNumber == 0 {
+                        // Team did not score a point yet so the side out image is on the left of the score box
+                        $match.points[pointNumber + 230].isShowSideOut.wrappedValue = true
+                        $match.points[pointNumber + 230].sideOutImageName.wrappedValue = "sideoutleft"
+                    } else {
+                        print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                        $match.points[pointNumber + 230].isShowSideOut.wrappedValue = true
+                        print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                    }
+                }
+            }
+        } else if match.currentGameNumber == 4 {
+            print("game number in pointScored: \(match.currentGameNumber)")
+            // Game 4
+            if match.isTeam1Serving {
+                // Points index row numbers for Team 1 Game 4 are 63 - 83
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber + 62].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber + 62].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber + 62].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            } else {
+                // Team 2 was serving
+                // Points index row numbers for Team 2 Game 4 are 168 - 188
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber + 167].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber + 167].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber + 167].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            }
+        } else if match.currentGameNumber == 5 {
+            print("game number in pointScored: \(match.currentGameNumber)")
+            // Game 1
+            if match.isTeam1Serving {
+                // Points index row numbers for Team 1 Game 5 are 84 - 104
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber + 83].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber + 83].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber + 83].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            } else {
+                // Team 2 was serving
+                // Points index row numbers for Team 2 Game 5 are 189 - 209
+                if pointNumber == 0 {
+                    // Team did not score a point yet so the side out image is on the left of the score box
+                    $match.points[pointNumber + 188].isShowSideOut.wrappedValue = true
+                    $match.points[pointNumber + 188].sideOutImageName.wrappedValue = "sideoutleft"
+                } else {
+                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    $match.points[pointNumber + 188].isShowSideOut.wrappedValue = true
+                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                }
+            }
+        }
+        
+        
+/*
         
         if match.servingPlayerNumber == 1 || match.servingPlayerNumber == 2 {
             // In here Team 1 was serving at sideout
@@ -562,6 +740,7 @@ extension MatchView {
             }
         }
         
+ */
         
         // Set server to the next server
         setServingPlayerNumber()

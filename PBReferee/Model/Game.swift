@@ -43,6 +43,8 @@ class Game: Object, ObjectKeyIdentifiable {
     
     @Persisted(originProperty: "games") var match: LinkingObjects<Match>
     
+    //@Persisted var points = RealmSwift.List<PointImage>()
+    
     var gameComputedDuration: Double {
         if isGameCompleted {
             let gameDurationSeconds = gameStartDateValue.distance(to: gameEndDateValue)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E32B4FDF28DFF18B005383CD /* TimeOutImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B4FDE28DFF18B005383CD /* TimeOutImage.swift */; };
+		E32B4FE128E0BCE2005383CD /* ProgrammerNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B4FE028E0BCE2005383CD /* ProgrammerNotes.swift */; };
+		E351044A28DF8715002D16D4 /* PointImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351044928DF8715002D16D4 /* PointImage.swift */; };
 		E3AC92BF28DEF20100C1FF5D /* DataLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92BE28DEF20100C1FF5D /* DataLoadView.swift */; };
 		E3AC92C128DEF24C00C1FF5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C028DEF24C00C1FF5D /* HomeView.swift */; };
 		E3AC92C328DEF2A100C1FF5D /* FunctionalityButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C228DEF2A100C1FF5D /* FunctionalityButtonsView.swift */; };
@@ -51,7 +54,7 @@
 		E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */; };
 		E3DD3F6A28DE889C008B47C4 /* ScoresheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6928DE889C008B47C4 /* ScoresheetManager.swift */; };
 		E3DD3F6C28DE88F0008B47C4 /* SheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6B28DE88F0008B47C4 /* SheetManager.swift */; };
-		E3DD3F6E28DE8921008B47C4 /* TimeoutImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6D28DE8921008B47C4 /* TimeoutImage.swift */; };
+		E3DD3F6E28DE8921008B47C4 /* TimeoutImageX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F6D28DE8921008B47C4 /* TimeoutImageX.swift */; };
 		E3DD3F7028DE8982008B47C4 /* PickleballRulebook2022.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E3DD3F6F28DE8982008B47C4 /* PickleballRulebook2022.pdf */; };
 		E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7128DE8A31008B47C4 /* Contants.swift */; };
 		E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */; };
@@ -96,6 +99,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E32B4FDE28DFF18B005383CD /* TimeOutImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutImage.swift; sourceTree = "<group>"; };
+		E32B4FE028E0BCE2005383CD /* ProgrammerNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerNotes.swift; sourceTree = "<group>"; };
+		E351044928DF8715002D16D4 /* PointImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointImage.swift; sourceTree = "<group>"; };
 		E3AC92BE28DEF20100C1FF5D /* DataLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadView.swift; sourceTree = "<group>"; };
 		E3AC92C028DEF24C00C1FF5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E3AC92C228DEF2A100C1FF5D /* FunctionalityButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalityButtonsView.swift; sourceTree = "<group>"; };
@@ -138,7 +144,7 @@
 		E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreImage.swift; sourceTree = "<group>"; };
 		E3DD3F6928DE889C008B47C4 /* ScoresheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresheetManager.swift; sourceTree = "<group>"; };
 		E3DD3F6B28DE88F0008B47C4 /* SheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetManager.swift; sourceTree = "<group>"; };
-		E3DD3F6D28DE8921008B47C4 /* TimeoutImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeoutImage.swift; sourceTree = "<group>"; };
+		E3DD3F6D28DE8921008B47C4 /* TimeoutImageX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeoutImageX.swift; sourceTree = "<group>"; };
 		E3DD3F6F28DE8982008B47C4 /* PickleballRulebook2022.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = PickleballRulebook2022.pdf; sourceTree = "<group>"; };
 		E3DD3F7128DE8A31008B47C4 /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
 		E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
@@ -242,6 +248,7 @@
 				E3DD3F6328DE87EC008B47C4 /* Game.swift */,
 				E3EE189728DE9B6E005E0DD6 /* MailView.swift */,
 				E3DD3F6528DE881E008B47C4 /* Match.swift */,
+				E351044928DF8715002D16D4 /* PointImage.swift */,
 				E3DD3F7328DE94F9008B47C4 /* RealmManager.swift */,
 				E3DD3F6728DE884D008B47C4 /* ScoreImage.swift */,
 				E3DD3F6928DE889C008B47C4 /* ScoresheetManager.swift */,
@@ -249,7 +256,8 @@
 				E3DD3F7928DE959E008B47C4 /* Settings.swift */,
 				E3DD3F6B28DE88F0008B47C4 /* SheetManager.swift */,
 				E3DD3F7B28DE9623008B47C4 /* StorageManager.swift */,
-				E3DD3F6D28DE8921008B47C4 /* TimeoutImage.swift */,
+				E32B4FDE28DFF18B005383CD /* TimeOutImage.swift */,
+				E3DD3F6D28DE8921008B47C4 /* TimeoutImageX.swift */,
 				E3DD3F7F28DE96A2008B47C4 /* Violation.swift */,
 			);
 			path = Model;
@@ -320,6 +328,7 @@
 				E3DD3F7128DE8A31008B47C4 /* Contants.swift */,
 				E3AC92FA28DF094900C1FF5D /* PointScoredExtension.swift */,
 				E3EE18C728DEADA2005E0DD6 /* PDFKitView.swift */,
+				E32B4FE028E0BCE2005383CD /* ProgrammerNotes.swift */,
 				E3EE18A328DE9D82005E0DD6 /* ScreenshotMaker.swift */,
 				E3EE18A728DE9E58005E0DD6 /* ScreenshotMakerView.swift */,
 				E3AC92FC28DF097B00C1FF5D /* SideOutExtension.swift */,
@@ -439,6 +448,7 @@
 				E3EE18A028DE9D1C005E0DD6 /* UIImageExtension.swift in Sources */,
 				E3EE18C828DEADA2005E0DD6 /* PDFKitView.swift in Sources */,
 				E3AC92D728DEF5E800C1FF5D /* ViolationStatusView.swift in Sources */,
+				E351044A28DF8715002D16D4 /* PointImage.swift in Sources */,
 				E3EE18B828DEA96D005E0DD6 /* MatchStatisticsView.swift in Sources */,
 				E3EE189E28DE9CD4005E0DD6 /* TypeExtension.swift in Sources */,
 				E3AC92C728DEF36900C1FF5D /* TopButtonsView.swift in Sources */,
@@ -461,6 +471,7 @@
 				E3DD3F7E28DE9658008B47C4 /* ArchivedMatch.swift in Sources */,
 				E3EE18D628DEB070005E0DD6 /* ScorekeepingView.swift in Sources */,
 				E3DD3F7428DE94F9008B47C4 /* RealmManager.swift in Sources */,
+				E32B4FE128E0BCE2005383CD /* ProgrammerNotes.swift in Sources */,
 				E3C4994728DE75D7003EB9B7 /* WelcomeView.swift in Sources */,
 				E3EE189A28DE9C67005E0DD6 /* CheckToggleStyle.swift in Sources */,
 				E3EE189828DE9B6E005E0DD6 /* MailView.swift in Sources */,
@@ -475,6 +486,7 @@
 				E3EE18AC28DEA69F005E0DD6 /* ScoresheetAdminView.swift in Sources */,
 				E3DD3F6828DE884D008B47C4 /* ScoreImage.swift in Sources */,
 				E3AC92F928DF08C000C1FF5D /* MatchViewExtension.swift in Sources */,
+				E32B4FDF28DFF18B005383CD /* TimeOutImage.swift in Sources */,
 				E3AC92DD28DEF6FA00C1FF5D /* BottomButtonsExtension.swift in Sources */,
 				E3DD3F7228DE8A31008B47C4 /* Contants.swift in Sources */,
 				E3EE18D228DEAFBE005E0DD6 /* IntroductionOverviewView.swift in Sources */,
@@ -483,7 +495,7 @@
 				E3AC92CD28DEF49500C1FF5D /* PreMatchBriefingView.swift in Sources */,
 				E3EE18AA28DEA652005E0DD6 /* AdminView.swift in Sources */,
 				E3EE18B428DEA723005E0DD6 /* ArchivedMatchesListView.swift in Sources */,
-				E3DD3F6E28DE8921008B47C4 /* TimeoutImage.swift in Sources */,
+				E3DD3F6E28DE8921008B47C4 /* TimeoutImageX.swift in Sources */,
 				E3DD3F6428DE87EC008B47C4 /* Game.swift in Sources */,
 				E3EE18A828DE9E58005E0DD6 /* ScreenshotMakerView.swift in Sources */,
 				E3EE18A428DE9D82005E0DD6 /* ScreenshotMaker.swift in Sources */,

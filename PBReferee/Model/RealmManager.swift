@@ -211,6 +211,265 @@ class RealmManager: ObservableObject {
         }
     }
     
+    func createPointImages() -> RealmSwift.List<PointImage> {
+        
+        /*
+         Give each PointImage a unique number
+         - - - - - - - - - - - - - - - - - - -
+         For Team 1
+         Game 1:    1 - 21  (need to allow for further expansion up to 30 points per game in case game goes longer than 21 points)
+         Game 2:   31 - 51
+         Game 3:   61 - 81
+         Game 4:  101 - 121
+         Game 5:  131 - 151
+         Game 3A: 401 - 421
+         - - - - - - - - - - - - - - - - - - -
+         For Team 2
+         Game 1:  201 - 221  (need to allow for further expansion up to 30 points per game in case game goes longer than 21 points)
+         Game 2:  231 - 251
+         Game 3:  261 - 281
+         Game 4:  301 - 321
+         Game 5:  331 - 351
+         Game 3A: 501 - 521
+         */
+        
+        let returnList = RealmSwift.List<PointImage>()
+        var rowNumber = 0
+        
+        // Game 1 PointImages Team 1
+        for var i in 1..<21  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage1 = PointImage()
+        newPointImage1.rowNumber = rowNumber
+        newPointImage1.boxNumber = 21
+        newPointImage1.pointNumber = 21
+        newPointImage1.boxImageName = "boxrightend"
+        returnList.append(newPointImage1)
+        rowNumber += 1
+        
+        // Game 2 PointImages Team 1
+        for var i in 31..<51  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 30
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage2 = PointImage()
+        newPointImage2.rowNumber = rowNumber
+        newPointImage2.boxNumber = 21
+        newPointImage2.pointNumber = 51
+        newPointImage2.boxImageName = "boxrightend"
+        returnList.append(newPointImage2)
+        rowNumber += 1
+        
+        // Game 3 PointImages Team 1
+        for var i in 61..<81  {
+            let newPointImage = PointImage()
+            newPointImage.boxNumber = i - 60
+            newPointImage.rowNumber = rowNumber
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxbottomrowleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage3 = PointImage()
+        newPointImage3.rowNumber = rowNumber
+        newPointImage3.boxNumber = 21
+        newPointImage3.pointNumber = 81
+        newPointImage3.boxImageName = "box"
+        returnList.append(newPointImage3)
+        rowNumber += 1
+        
+        // Game 4 PointImages Team 1
+        for var i in 101..<121  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 100
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage4 = PointImage()
+        newPointImage4.rowNumber = rowNumber
+        newPointImage4.boxNumber = 21
+        newPointImage4.pointNumber = 121
+        newPointImage4.boxImageName = "boxrightend"
+        returnList.append(newPointImage4)
+        rowNumber += 1
+        
+        // Game 5 PointImages Team 1
+        for var i in 131..<151  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 130
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxbottomrowleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage5 = PointImage()
+        newPointImage5.rowNumber = rowNumber
+        newPointImage5.boxNumber = 21
+        newPointImage5.pointNumber = 151
+        newPointImage5.boxImageName = "box"
+        returnList.append(newPointImage5)
+        rowNumber += 1
+        
+        // Game 1 PointImages Team 2
+        for var i in 201..<221  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 200
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage21 = PointImage()
+        newPointImage21.rowNumber = rowNumber
+        newPointImage21.boxNumber = 21
+        newPointImage21.pointNumber = 221
+        newPointImage21.boxImageName = "boxrightend"
+        returnList.append(newPointImage21)
+        rowNumber += 1
+        print("After Game 1 points for Team 2 returnList. count: \(returnList.count)")
+        
+        // Game 2 PointImages Team 2
+        for var i in 231..<251  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 230
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage22 = PointImage()
+        newPointImage22.rowNumber = rowNumber
+        newPointImage22.boxNumber = 21
+        newPointImage22.pointNumber = 251
+        newPointImage22.boxImageName = "boxrightend"
+        returnList.append(newPointImage22)
+        rowNumber += 1
+        
+        // Game 3 PointImages Team 2
+        for var i in 261..<281  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 260
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxbottomrowleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage23 = PointImage()
+        newPointImage23.rowNumber = rowNumber
+        newPointImage23.boxNumber = 21
+        newPointImage23.pointNumber = 281
+        newPointImage23.boxImageName = "box"
+        returnList.append(newPointImage23)
+        rowNumber += 1
+        
+        // Game 4 PointImages Team 2
+        for var i in 301..<321  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 300
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage24 = PointImage()
+        newPointImage24.rowNumber = rowNumber
+        newPointImage24.boxNumber = 21
+        newPointImage24.pointNumber = 321
+        newPointImage24.boxImageName = "boxrightend"
+        returnList.append(newPointImage24)
+        rowNumber += 1
+        
+        // Game 5 PointImages Team 2
+        for var i in 331..<351  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 330
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxbottomrowleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage25 = PointImage()
+        newPointImage25.rowNumber = rowNumber
+        newPointImage25.boxNumber = 21
+        newPointImage25.pointNumber = 351
+        newPointImage25.boxImageName = "box"
+        returnList.append(newPointImage25)
+        rowNumber += 1
+        print("After Game 5 points for Team 2 returnList. count: \(returnList.count)")
+        
+        // Game 3A PointImages Team 1
+        for var i in 401..<421  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 400
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxbottomrowleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage33 = PointImage()
+        newPointImage33.rowNumber = rowNumber
+        newPointImage33.boxNumber = 21
+        newPointImage33.pointNumber = 421
+        newPointImage33.boxImageName = "box"
+        returnList.append(newPointImage33)
+        rowNumber += 1
+        
+        // Game 3A PointImages Team 2
+        for var i in 501..<521  {
+            let newPointImage = PointImage()
+            newPointImage.rowNumber = rowNumber
+            newPointImage.boxNumber = i - 500
+            newPointImage.pointNumber = i
+            newPointImage.boxImageName = "boxbottomrowleft"
+            returnList.append(newPointImage)
+            i += 1
+            rowNumber += 1
+        }
+        let newPointImage34 = PointImage()
+        newPointImage34.rowNumber = rowNumber
+        newPointImage34.boxNumber = 21
+        newPointImage34.pointNumber = 521
+        newPointImage34.boxImageName = "box"
+        returnList.append(newPointImage34)
+        rowNumber += 1
+        
+        
+        return returnList
+    }
+    
     // TODO: - This is just for development - delete for production
     func createNewDevelopmentMatch () -> Match {
         print("Starting createNewDevelopmentMatch() in RealmManager")
@@ -257,6 +516,7 @@ class RealmManager: ObservableObject {
             game1.gameFirstServerPlayerNumber = 1               // Default is 0
             game1.selectedFirstServerTeam1 = 1                  // Default is 0
             game1.selectedFirstServerTeam2 = 4                  // Default is 0
+            //game1.points = createGamePointImages(gameNumber: game1.gameNumber)
             newMatch.games.append(game1)
             let game2 = Game()
             game2.gameNumber = 2
@@ -264,6 +524,7 @@ class RealmManager: ObservableObject {
             game2.gameFirstServerPlayerNumber = 3               // Default is 0
             game2.selectedFirstServerTeam1 = 2                  // Default is 0
             game2.selectedFirstServerTeam2 = 3                  // Default is 0
+            //game2.points = createGamePointImages(gameNumber: game2.gameNumber)
             newMatch.games.append(game2)
             let game3 = Game()
             game3.gameNumber = 3
@@ -271,6 +532,7 @@ class RealmManager: ObservableObject {
             game3.gameFirstServerPlayerNumber = 2               // Default is 0
             game3.selectedFirstServerTeam1 = 2                  // Default is 0
             game3.selectedFirstServerTeam2 = 4                  // Default is 0
+            //game3.points = createGamePointImages(gameNumber: game3.gameNumber)
             newMatch.games.append(game3)
             let game4 = Game()
             game4.gameNumber = 4
@@ -278,6 +540,7 @@ class RealmManager: ObservableObject {
             game4.gameFirstServerPlayerNumber = 1               // Default is 0
             game4.selectedFirstServerTeam1 = 1                  // Default is 0
             game4.selectedFirstServerTeam2 = 4                  // Default is 0
+            //game4.points = createGamePointImages(gameNumber: game4.gameNumber)
             newMatch.games.append(game4)
             let game5 = Game()
             game5.gameNumber = 5
@@ -285,8 +548,11 @@ class RealmManager: ObservableObject {
             game5.gameFirstServerPlayerNumber = 1               // Default is 0
             game5.selectedFirstServerTeam1 = 1                  // Default is 0
             game5.selectedFirstServerTeam2 = 4                  // Default is 0
+            //game5.points = createGamePointImages(gameNumber: game5.gameNumber)
             newMatch.games.append(game5)
-            newMatch.images.append(ScoringImages())
+            //newMatch.images.append(ScoringImages())
+            newMatch.points = createPointImages()
+            newMatch.timeouts = createTimeOutImages()
             do {
                 try realm.write {
                     realm.add(newMatch)
@@ -297,6 +563,103 @@ class RealmManager: ObservableObject {
         }
         return newMatch
     }
+    
+//    func createGamePointImages(gameNumber: Int) -> RealmSwift.List<PointImage> {
+//        /*
+//         Give each PointImage a unique number
+//         Game 1: 1 - 21  (allow for further expansion up to 30 in case game goes longer than 21 points)
+//         Game 2: 31 - 52
+//         Game 3: 61 - 82
+//         Game 4: 101 - 122
+//         Game 5: 131 - 152
+//         */
+//        let returnList = RealmSwift.List<PointImage>()
+//        switch gameNumber {
+//        case 1:
+//            // Game 1 PointImages
+//            for var i in 1..<21  {
+//                let newPointImage = PointImage()
+//                newPointImage.boxNumber = i
+//                newPointImage.pointNumber = i
+//                newPointImage.boxImageName = "boxleft"
+//                returnList.append(newPointImage)
+//                i += 1
+//            }
+//            let newPointImage = PointImage()
+//            newPointImage.boxNumber = 21
+//            newPointImage.pointNumber = 21
+//            newPointImage.boxImageName = "boxrightend"
+//            returnList.append(newPointImage)
+//            //print("returnList count for Game 1 in RealmManager: \(returnList.count)")
+//            //print("returnList[1] for Game 1 in in RealmManager: \(returnList[0])")
+//        case 2:
+//            // Game 2 PointImages
+//            for var i in 31..<51  {
+//                let newPointImage = PointImage()
+//                newPointImage.boxNumber = i - 30
+//                newPointImage.pointNumber = i
+//                newPointImage.boxImageName = "boxleft"
+//                returnList.append(newPointImage)
+//                i += 1
+//            }
+//            let newPointImage = PointImage()
+//            newPointImage.boxNumber = 51
+//            newPointImage.pointNumber = 51
+//            newPointImage.boxImageName = "boxrightend"
+//            returnList.append(newPointImage)
+//        case 3:
+//            // Game 3 PointImages
+//            for var i in 61..<81  {
+//                let newPointImage = PointImage()
+//                newPointImage.boxNumber = i - 60
+//                newPointImage.pointNumber = i
+//                newPointImage.boxImageName = "boxbottomrowleft"
+//                returnList.append(newPointImage)
+//                i += 1
+//            }
+//            let newPointImage = PointImage()
+//            newPointImage.boxNumber = 81 - 60
+//            newPointImage.pointNumber = 81
+//            newPointImage.boxImageName = "box"
+//            returnList.append(newPointImage)
+//        case 4:
+//            // Game 4 PointImages
+//            for var i in 101..<121  {
+//                let newPointImage = PointImage()
+//                newPointImage.boxNumber = i - 100
+//                newPointImage.pointNumber = i
+//                newPointImage.boxImageName = "boxleft"
+//                returnList.append(newPointImage)
+//                i += 1
+//            }
+//            let newPointImage = PointImage()
+//            newPointImage.boxNumber = 121 - 100
+//            newPointImage.pointNumber = 121
+//            newPointImage.boxImageName = "boxrightend"
+//            returnList.append(newPointImage)
+//        case 5:
+//            // Game 5 PointImages
+//            for var i in 131..<151  {
+//                let newPointImage = PointImage()
+//                newPointImage.boxNumber = i - 130
+//                newPointImage.pointNumber = i
+//                newPointImage.boxImageName = "boxbottomrowleft"
+//                returnList.append(newPointImage)
+//                i += 1
+//            }
+//            let newPointImage = PointImage()
+//            newPointImage.boxNumber = 151 - 130
+//            newPointImage.pointNumber = 151
+//            newPointImage.boxImageName = "box"
+//            returnList.append(newPointImage)
+//            //print("returnList count for Game 5 in RealmManager: \(returnList.count)")
+//            //print("returnList[20] in for Game 5 RealmManager: \(returnList[20])")
+//        default:
+//            print("Error creating game point images in createGamePointImages() in RealmManager")
+//        }
+//
+//        return returnList
+//    }
     
     func createNewMatch () -> Match {
         let newMatch = Match()
@@ -334,7 +697,9 @@ class RealmManager: ObservableObject {
             game5.gameNumber = 5
             game5.refereeName = settings.defaultRefereeName
             newMatch.games.append(game5)
-            newMatch.images.append(ScoringImages())
+            //newMatch.images.append(ScoringImages())
+            newMatch.points = createPointImages()
+            newMatch.timeouts = createTimeOutImages()
             do {
                 try realm.write {
                     realm.add(newMatch)
@@ -359,6 +724,313 @@ class RealmManager: ObservableObject {
         }
     }
     
+    func createTimeOutImages() -> RealmSwift.List<TimeOutImage> {
+        
+        let returnList = RealmSwift.List<TimeOutImage>()
+        var rowNumber = 0
+        
+        // Timeouts Game 1 Team 1
+        let newTimeoutG1T1T1Image = TimeOutImage()
+        newTimeoutG1T1T1Image.rowNumber = rowNumber
+        newTimeoutG1T1T1Image.boxImageName = "boxleft"
+        newTimeoutG1T1T1Image.boxNumber = "1"
+        newTimeoutG1T1T1Image.timeOutNumber = 1
+        returnList.append(newTimeoutG1T1T1Image)
+        rowNumber += 1
+       
+        let newTimeoutG1T2T1Image = TimeOutImage()
+        newTimeoutG1T2T1Image.rowNumber = rowNumber
+        newTimeoutG1T2T1Image.boxImageName = "boxrightend"
+        newTimeoutG1T2T1Image.boxNumber = "2"
+        newTimeoutG1T2T1Image.timeOutNumber = 2
+        returnList.append(newTimeoutG1T2T1Image)
+        rowNumber += 1
+        
+        let newTimeoutG1T3T1Image = TimeOutImage()
+        newTimeoutG1T3T1Image.rowNumber = rowNumber
+        newTimeoutG1T3T1Image.boxImageName = "boxblank"
+        newTimeoutG1T3T1Image.boxNumber = ""
+        newTimeoutG1T3T1Image.timeOutNumber = 3
+        returnList.append(newTimeoutG1T3T1Image)
+        rowNumber += 1
+        
+        // Timeouts Game 2 Team 1
+        let newTimeoutG2T1T1Image = TimeOutImage()
+        newTimeoutG2T1T1Image.rowNumber = rowNumber
+        newTimeoutG2T1T1Image.boxImageName = "boxleft"
+        newTimeoutG2T1T1Image.boxNumber = "1"
+        newTimeoutG2T1T1Image.timeOutNumber = 4
+        returnList.append(newTimeoutG2T1T1Image)
+        rowNumber += 1
+       
+        let newTimeoutG2T2T1Image = TimeOutImage()
+        newTimeoutG2T2T1Image.rowNumber = rowNumber
+        newTimeoutG2T2T1Image.boxImageName = "boxrightend"
+        newTimeoutG2T2T1Image.boxNumber = "2"
+        newTimeoutG2T2T1Image.timeOutNumber = 5
+        returnList.append(newTimeoutG2T2T1Image)
+        rowNumber += 1
+        
+        let newTimeoutG2T3T1Image = TimeOutImage()
+        newTimeoutG2T3T1Image.rowNumber = rowNumber
+        newTimeoutG2T3T1Image.boxImageName = "boxblank"
+        newTimeoutG2T3T1Image.boxNumber = ""
+        newTimeoutG2T3T1Image.timeOutNumber = 6
+        returnList.append(newTimeoutG2T3T1Image)
+        rowNumber += 1
+
+        // Timeouts Game 3 Team 1
+        let newTimeoutG3T1T1Image = TimeOutImage()
+        newTimeoutG3T1T1Image.rowNumber = rowNumber
+        newTimeoutG3T1T1Image.boxImageName = "boxbottomrowleft"
+        newTimeoutG3T1T1Image.boxNumber = "1"
+        newTimeoutG3T1T1Image.timeOutNumber = 7
+        returnList.append(newTimeoutG3T1T1Image)
+        rowNumber += 1
+       
+        let newTimeoutG3T2T1Image = TimeOutImage()
+        newTimeoutG3T2T1Image.rowNumber = rowNumber
+        newTimeoutG3T2T1Image.boxImageName = "box"
+        newTimeoutG3T2T1Image.boxNumber = "2"
+        newTimeoutG3T2T1Image.timeOutNumber = 8
+        returnList.append(newTimeoutG3T2T1Image)
+        rowNumber += 1
+        
+        let newTimeoutG3T3T1Image = TimeOutImage()
+        newTimeoutG3T3T1Image.rowNumber = rowNumber
+        newTimeoutG3T3T1Image.boxImageName = "boxblank"
+        newTimeoutG3T3T1Image.boxNumber = ""
+        newTimeoutG3T3T1Image.timeOutNumber = 9
+        returnList.append(newTimeoutG3T3T1Image)
+        rowNumber += 1
+        
+        // Timeouts Game 4 Team 1
+        let newTimeoutG4T1T1Image = TimeOutImage()
+        newTimeoutG4T1T1Image.rowNumber = rowNumber
+        newTimeoutG4T1T1Image.boxImageName = "boxleft"
+        newTimeoutG4T1T1Image.boxNumber = "1"
+        newTimeoutG4T1T1Image.timeOutNumber = 10
+        returnList.append(newTimeoutG4T1T1Image)
+        rowNumber += 1
+        
+        let newTimeoutG4T2T1Image = TimeOutImage()
+        newTimeoutG4T2T1Image.rowNumber = rowNumber
+        newTimeoutG4T2T1Image.boxImageName = "boxrightend"
+        newTimeoutG4T2T1Image.boxNumber = "2"
+        newTimeoutG4T2T1Image.timeOutNumber = 11
+        returnList.append(newTimeoutG4T2T1Image)
+        rowNumber += 1
+        
+        let newTimeoutG4T3T1Image = TimeOutImage()
+        newTimeoutG4T3T1Image.rowNumber = rowNumber
+        newTimeoutG4T3T1Image.boxImageName = "boxblank"
+        newTimeoutG4T3T1Image.boxNumber = ""
+        newTimeoutG4T3T1Image.timeOutNumber = 12
+        returnList.append(newTimeoutG4T3T1Image)
+        rowNumber += 1
+        
+        // Timeouts Game 5 Team 1
+        let newTimeoutG5T1T1Image = TimeOutImage()
+        newTimeoutG5T1T1Image.rowNumber = rowNumber
+        newTimeoutG5T1T1Image.boxImageName = "boxbottomrowleft"
+        newTimeoutG5T1T1Image.boxNumber = "1"
+        newTimeoutG5T1T1Image.timeOutNumber = 13
+        returnList.append(newTimeoutG5T1T1Image)
+        rowNumber += 1
+        
+        let newTimeoutG5T2T1Image = TimeOutImage()
+        newTimeoutG5T2T1Image.rowNumber = rowNumber
+        newTimeoutG5T2T1Image.boxImageName = "box"
+        newTimeoutG5T2T1Image.boxNumber = "2"
+        newTimeoutG5T2T1Image.timeOutNumber = 14
+        returnList.append(newTimeoutG5T2T1Image)
+        rowNumber += 1
+        
+        let newTimeoutG5T3T1Image = TimeOutImage()
+        newTimeoutG5T3T1Image.rowNumber = rowNumber
+        newTimeoutG5T3T1Image.boxImageName = "boxblank"
+        newTimeoutG5T3T1Image.boxNumber = ""
+        newTimeoutG5T3T1Image.timeOutNumber = 15
+        returnList.append(newTimeoutG5T3T1Image)
+        rowNumber += 1
+
+        // Timeouts Game 1 Team 2
+        let newTimeoutG1T1T2Image = TimeOutImage()
+        newTimeoutG1T1T2Image.rowNumber = rowNumber
+        newTimeoutG1T1T2Image.boxImageName = "boxleft"
+        newTimeoutG1T1T2Image.boxNumber = "1"
+        newTimeoutG1T1T2Image.timeOutNumber = 16
+        returnList.append(newTimeoutG1T1T2Image)
+        rowNumber += 1
+
+        let newTimeoutG1T2T2Image = TimeOutImage()
+        newTimeoutG1T2T2Image.rowNumber = rowNumber
+        newTimeoutG1T2T2Image.boxImageName = "boxrightend"
+        newTimeoutG1T2T2Image.boxNumber = "2"
+        newTimeoutG1T2T2Image.timeOutNumber = 17
+        returnList.append(newTimeoutG1T2T2Image)
+        rowNumber += 1
+
+        let newTimeoutG1T3T2Image = TimeOutImage()
+        newTimeoutG1T3T2Image.rowNumber = rowNumber
+        newTimeoutG1T3T2Image.boxImageName = "boxblank"
+        newTimeoutG1T3T2Image.boxNumber = ""
+        newTimeoutG1T3T2Image.timeOutNumber = 18
+        returnList.append(newTimeoutG1T3T2Image)
+        rowNumber += 1
+
+        // Timeouts Game 2 Team 2
+        let newTimeoutG2T1T2Image = TimeOutImage()
+        newTimeoutG2T1T2Image.rowNumber = rowNumber
+        newTimeoutG2T1T2Image.boxImageName = "boxleft"
+        newTimeoutG2T1T2Image.boxNumber = "1"
+        newTimeoutG2T1T2Image.timeOutNumber = 19
+        returnList.append(newTimeoutG2T1T2Image)
+        rowNumber += 1
+
+        let newTimeoutG2T2T2Image = TimeOutImage()
+        newTimeoutG2T2T2Image.rowNumber = rowNumber
+        newTimeoutG2T2T2Image.boxImageName = "boxrightend"
+        newTimeoutG2T2T2Image.boxNumber = "2"
+        newTimeoutG2T2T2Image.timeOutNumber = 20
+        returnList.append(newTimeoutG2T2T2Image)
+        rowNumber += 1
+
+        let newTimeoutG2T3T2Image = TimeOutImage()
+        newTimeoutG2T3T2Image.rowNumber = rowNumber
+        newTimeoutG2T3T2Image.boxImageName = "boxblank"
+        newTimeoutG2T3T2Image.boxNumber = ""
+        newTimeoutG2T3T2Image.timeOutNumber = 21
+        returnList.append(newTimeoutG2T3T2Image)
+        rowNumber += 1
+
+        // Timeouts Game 3 Team 2
+        let newTimeoutG3T1T2Image = TimeOutImage()
+        newTimeoutG3T1T2Image.rowNumber = rowNumber
+        newTimeoutG3T1T2Image.boxImageName = "boxbottomrowleft"
+        newTimeoutG3T1T2Image.boxNumber = "1"
+        newTimeoutG3T1T2Image.timeOutNumber = 22
+        returnList.append(newTimeoutG3T1T2Image)
+        rowNumber += 1
+
+        let newTimeoutG3T2T2Image = TimeOutImage()
+        newTimeoutG3T2T2Image.rowNumber = rowNumber
+        newTimeoutG3T2T2Image.boxImageName = "box"
+        newTimeoutG3T2T2Image.boxNumber = "2"
+        newTimeoutG3T2T2Image.timeOutNumber = 23
+        returnList.append(newTimeoutG3T2T2Image)
+        rowNumber += 1
+
+        let newTimeoutG3T3T2Image = TimeOutImage()
+        newTimeoutG3T3T2Image.rowNumber = rowNumber
+        newTimeoutG3T3T2Image.boxImageName = "boxblank"
+        newTimeoutG3T3T2Image.boxNumber = ""
+        newTimeoutG3T3T2Image.timeOutNumber = 24
+        returnList.append(newTimeoutG3T3T2Image)
+        rowNumber += 1
+
+        // Timeouts Game 4 Team 2
+        let newTimeoutG4T1T2Image = TimeOutImage()
+        newTimeoutG4T1T2Image.rowNumber = rowNumber
+        newTimeoutG4T1T2Image.boxImageName = "boxleft"
+        newTimeoutG4T1T2Image.boxNumber = "1"
+        newTimeoutG4T1T2Image.timeOutNumber = 25
+        returnList.append(newTimeoutG4T1T2Image)
+        rowNumber += 1
+
+        let newTimeoutG4T2T2Image = TimeOutImage()
+        newTimeoutG4T2T2Image.rowNumber = rowNumber
+        newTimeoutG4T2T2Image.boxImageName = "boxrightend"
+        newTimeoutG4T2T2Image.boxNumber = "2"
+        newTimeoutG4T2T2Image.timeOutNumber = 26
+        returnList.append(newTimeoutG4T2T2Image)
+        rowNumber += 1
+
+        let newTimeoutG4T3T2Image = TimeOutImage()
+        newTimeoutG4T3T2Image.rowNumber = rowNumber
+        newTimeoutG4T3T2Image.boxImageName = "boxblank"
+        newTimeoutG4T3T2Image.boxNumber = ""
+        newTimeoutG4T3T2Image.timeOutNumber = 27
+        returnList.append(newTimeoutG4T3T2Image)
+        rowNumber += 1
+
+        // Timeouts Game 5 Team 2
+        let newTimeoutG5T1T2Image = TimeOutImage()
+        newTimeoutG5T1T2Image.rowNumber = rowNumber
+        newTimeoutG5T1T2Image.boxImageName = "boxbottomrowleft"
+        newTimeoutG5T1T2Image.boxNumber = "1"
+        newTimeoutG5T1T2Image.timeOutNumber = 28
+        returnList.append(newTimeoutG5T1T2Image)
+        rowNumber += 1
+
+        let newTimeoutG5T2T2Image = TimeOutImage()
+        newTimeoutG5T2T2Image.rowNumber = rowNumber
+        newTimeoutG5T2T2Image.boxImageName = "box"
+        newTimeoutG5T2T2Image.boxNumber = "2"
+        newTimeoutG5T2T2Image.timeOutNumber = 29
+        returnList.append(newTimeoutG5T2T2Image)
+        rowNumber += 1
+
+        let newTimeoutG5T3T2Image = TimeOutImage()
+        newTimeoutG5T3T2Image.rowNumber = rowNumber
+        newTimeoutG5T3T2Image.boxImageName = "boxblank"
+        newTimeoutG5T3T2Image.boxNumber = ""
+        newTimeoutG5T3T2Image.timeOutNumber = 30
+        returnList.append(newTimeoutG5T3T2Image)
+        rowNumber += 1
+        
+        // Timeouts Game 3A Team 1
+        let newTimeoutG3AT1T1Image = TimeOutImage()
+        newTimeoutG3AT1T1Image.rowNumber = rowNumber
+        newTimeoutG3AT1T1Image.boxImageName = "boxleft"
+        newTimeoutG3AT1T1Image.boxNumber = "1"
+        newTimeoutG3AT1T1Image.timeOutNumber = 31
+        returnList.append(newTimeoutG3AT1T1Image)
+        rowNumber += 1
+
+        let newTimeoutG3AT2T1Image = TimeOutImage()
+        newTimeoutG3AT2T1Image.rowNumber = rowNumber
+        newTimeoutG3AT2T1Image.boxImageName = "boxrightend"
+        newTimeoutG3AT2T1Image.boxNumber = "2"
+        newTimeoutG3AT2T1Image.timeOutNumber = 32
+        returnList.append(newTimeoutG3AT2T1Image)
+        rowNumber += 1
+
+        let newTimeoutG3AT3T1Image = TimeOutImage()
+        newTimeoutG3AT3T1Image.rowNumber = rowNumber
+        newTimeoutG3AT3T1Image.boxImageName = "boxblank"
+        newTimeoutG3AT3T1Image.boxNumber = ""
+        newTimeoutG3AT3T1Image.timeOutNumber = 33
+        returnList.append(newTimeoutG3AT3T1Image)
+        rowNumber += 1
+        
+        // Timeouts Game 3A Team 2
+        let newTimeoutG3AT1T2Image = TimeOutImage()
+        newTimeoutG3AT1T2Image.rowNumber = rowNumber
+        newTimeoutG3AT1T2Image.boxImageName = "boxleft"
+        newTimeoutG3AT1T2Image.boxNumber = "1"
+        newTimeoutG3AT1T2Image.timeOutNumber = 34
+        returnList.append(newTimeoutG3AT1T2Image)
+        rowNumber += 1
+
+        let newTimeoutG3AT2T2Image = TimeOutImage()
+        newTimeoutG3AT2T2Image.rowNumber = rowNumber
+        newTimeoutG3AT2T2Image.boxImageName = "boxrightend"
+        newTimeoutG3AT2T2Image.boxNumber = "2"
+        newTimeoutG3AT2T2Image.timeOutNumber = 35
+        returnList.append(newTimeoutG3AT2T2Image)
+        rowNumber += 1
+
+        let newTimeoutG3AT3T2Image = TimeOutImage()
+        newTimeoutG3AT3T2Image.rowNumber = rowNumber
+        newTimeoutG3AT3T2Image.boxImageName = "boxblank"
+        newTimeoutG3AT3T2Image.boxNumber = ""
+        newTimeoutG3AT3T2Image.timeOutNumber = 36
+        returnList.append(newTimeoutG3AT3T2Image)
+        rowNumber += 1
+        
+        return returnList
+    }
     
     //func deleteGames(for match: Match) {
     func deleteGames() {

@@ -81,8 +81,10 @@ class Match: Object, ObjectKeyIdentifiable {
     @Persisted var whoIsServingText = "2nd Server"
     
     @Persisted var games = RealmSwift.List<Game>()
-    @Persisted var violations = RealmSwift.List<Violation>()
     @Persisted var images = RealmSwift.List<ScoringImages>()
+    @Persisted var points = RealmSwift.List<PointImage>()
+    @Persisted var timeouts = RealmSwift.List<TimeOutImage>()
+    @Persisted var violations = RealmSwift.List<Violation>()
     
     
     var matchTotalPointsWinningTeam: Int {
