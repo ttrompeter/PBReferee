@@ -1054,19 +1054,19 @@ class RealmManager: ObservableObject {
     }
     
     
-//    func deleteScoringImages() {
-//        print("Starting deleteScoringImages() in RealmManager")
-//        if let realm = realm {
-//            do {
-//                try realm.write {
-//                    let matchToUse = realm.objects(Match.self)[0]
-//                    realm.delete(matchToUse.images[0])
-//                }
-//            } catch {
-//                print("Error deleting images in Realm Manager")
-//            }
-//        }
-//    }
+    func deleteScoringImages() {
+        print("Starting deleteScoringImages() in RealmManager")
+        if let realm = realm {
+            do {
+                try realm.write {
+                    let matchToUse = realm.objects(Match.self)[0]
+                    realm.delete(matchToUse.images[0])
+                }
+            } catch {
+                print("Error deleting images in Realm Manager")
+            }
+        }
+    }
     
     func deleteViolations() {
         print("Starting deleteViolations() in RealmManager")

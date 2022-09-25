@@ -38,9 +38,9 @@ extension MatchView {
                     $match.points[pointNumber].isShowSideOut.wrappedValue = true
                     $match.points[pointNumber].sideOutImageName.wrappedValue = "sideoutleft"
                 } else {
-                    print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
+                    //print("point info before set isShowSideOut: \(match.points[pointNumber - 1])")
                     $match.points[pointNumber - 1].isShowSideOut.wrappedValue = true
-                    print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
+                    //print("point info after set isShowSideOut: \(match.points[pointNumber - 1])")
                 }
             } else {
                 // Team 2 was serving
