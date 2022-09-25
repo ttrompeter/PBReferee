@@ -17,11 +17,11 @@ struct MatchStatisticsIIView: View {
     @ObservedRealmObject var match: Match
     
     private var totalMatchTimeoutsTeam1: String {
-        let totalTimeouts = match.games[0].timeOutsTeam1 + match.games[1].timeOutsTeam1 + match.games[2].timeOutsTeam1 + match.games[3].timeOutsTeam1 + match.games[4].timeOutsTeam1
+        let totalTimeouts = match.games[0].timeOutsTakenTeam1 + match.games[1].timeOutsTakenTeam1 + match.games[2].timeOutsTakenTeam1 + match.games[3].timeOutsTakenTeam1 + match.games[4].timeOutsTakenTeam1
         return String(totalTimeouts)
     }
     private var totalMatchTimeoutsTeam2: String {
-        let totalTimeouts = match.games[0].timeOutsTeam2 + match.games[1].timeOutsTeam2 + match.games[2].timeOutsTeam2 + match.games[3].timeOutsTeam2 + match.games[4].timeOutsTeam2
+        let totalTimeouts = match.games[0].timeOutsTakenTeam2 + match.games[1].timeOutsTakenTeam2 + match.games[2].timeOutsTakenTeam2 + match.games[3].timeOutsTakenTeam2 + match.games[4].timeOutsTakenTeam2
         return String(totalTimeouts)
     }
     private var totalMatchSideoutsTeam1: String {
@@ -166,8 +166,8 @@ struct MatchStatisticsIIView: View {
                                 Text("\(match.games[0].sideOutsTeam1)")
                                 Text("\(match.games[0].sideOutsTeam2)")
                                 Divider()
-                                Text("\(match.games[0].timeOutsTeam1)")
-                                Text("\(match.games[0].timeOutsTeam2)")
+                                Text("\(match.games[0].timeOutsTakenTeam1)")
+                                Text("\(match.games[0].timeOutsTakenTeam2)")
                             }
                             Divider()
                             Text("\(game1WarningsTeam1)")
@@ -184,8 +184,8 @@ struct MatchStatisticsIIView: View {
                                 Text("\(match.games[1].sideOutsTeam1)")
                                 Text("\(match.games[1].sideOutsTeam2)")
                                 Divider()
-                                Text("\(match.games[1].timeOutsTeam1)")
-                                Text("\(match.games[1].timeOutsTeam2)")
+                                Text("\(match.games[1].timeOutsTakenTeam1)")
+                                Text("\(match.games[1].timeOutsTakenTeam2)")
                             }
                             Divider()
                             Text("\(game2WarningsTeam1)")
@@ -202,8 +202,8 @@ struct MatchStatisticsIIView: View {
                                 Text("\(match.games[2].sideOutsTeam1)")
                                 Text("\(match.games[2].sideOutsTeam2)")
                                 Divider()
-                                Text("\(match.games[2].timeOutsTeam1)")
-                                Text("\(match.games[2].timeOutsTeam2)")
+                                Text("\(match.games[2].timeOutsTakenTeam1)")
+                                Text("\(match.games[2].timeOutsTakenTeam2)")
                             }
                             Divider()
                             Text("\(game3WarningsTeam1)")
@@ -221,8 +221,8 @@ struct MatchStatisticsIIView: View {
                                     Text("\(match.games[3].sideOutsTeam1)")
                                     Text("\(match.games[3].sideOutsTeam2)")
                                     Divider()
-                                    Text("\(match.games[3].timeOutsTeam1)")
-                                    Text("\(match.games[3].timeOutsTeam2)")
+                                    Text("\(match.games[3].timeOutsTakenTeam1)")
+                                    Text("\(match.games[3].timeOutsTakenTeam2)")
                                 }
                                 Divider()
                                 Text("\(game4WarningsTeam1)")

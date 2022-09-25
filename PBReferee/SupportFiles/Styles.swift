@@ -274,7 +274,7 @@ struct TimeoutsButtonStyle: ButtonStyle {
                 .frame(width: 180, height: 40)
             //.background(isEnabled ? Constants.MINT_LEAF : Constants.SILVER)
                 .background(Color(.mintleaf))
-                .foregroundColor(isEnabled ? Color(.slate) : .white)
+                .foregroundColor(isEnabled ? Color(.white) : Color(.slate))
                 .font(.callout)
                 .clipShape(Capsule())
                 .opacity(isEnabled ? 1.0 : 0.6)

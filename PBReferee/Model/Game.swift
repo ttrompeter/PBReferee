@@ -37,8 +37,8 @@ class Game: Object, ObjectKeyIdentifiable {
     @Persisted var selectedFirstServerTeam2 = 0
     @Persisted var sideOutsTeam1 = 0
     @Persisted var sideOutsTeam2 = 0
-    @Persisted var timeOutsTeam1 = 0
-    @Persisted var timeOutsTeam2 = 0
+    @Persisted var timeOutsTakenTeam1 = 0
+    @Persisted var timeOutsTakenTeam2 = 0
     @Persisted var traineeName = ""
     
     @Persisted(originProperty: "games") var match: LinkingObjects<Match>

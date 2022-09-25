@@ -157,7 +157,7 @@ struct ChangeSidesTeam1View: View {
                         Image(Constants.BOX_BLANK)
                             .resizable()
                             .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
-                        Image("red_yellow_cards")
+                        Image("red-yellow-cards")
                             .resizable()
                             .frame(width: 20, height: 20)
                     }
@@ -173,7 +173,7 @@ struct ChangeSidesTeam1View: View {
                         Image(Constants.BOX_BLANK)
                             .resizable()
                             .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
-                        Image("red_yellow_cards")
+                        Image("red-yellow-cards")
                             .resizable()
                             .frame(width: 20, height: 20)
                     }
@@ -189,7 +189,7 @@ struct ChangeSidesTeam1View: View {
                         Image(Constants.BOX_BLANK)
                             .resizable()
                             .frame(width: Constants.BOX_DIMENSION, height: Constants.BOX_DIMENSION)
-                        Image("red_yellow_cards")
+                        Image("red-yellow-cards")
                             .resizable()
                             .frame(width: 20, height: 20)
                     }

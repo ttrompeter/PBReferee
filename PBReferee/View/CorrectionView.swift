@@ -256,10 +256,10 @@ struct CorrectionView: View {
         // Subtract a timeout from team who was asigned a timeout & set the teamTakingTimeout back to default value of 0
         switch scoresheetManager.lastActionPlayerNumber {
         case 1, 2:
-            $match.games[match.currentGameArrayIndex].timeOutsTeam1.wrappedValue -= 1
+            $match.games[match.currentGameArrayIndex].timeOutsTakenTeam1.wrappedValue -= 1
             $match.teamTakingTimeout.wrappedValue = 0
         case 3, 4:
-            $match.games[match.currentGameArrayIndex].timeOutsTeam2.wrappedValue -= 1
+            $match.games[match.currentGameArrayIndex].timeOutsTakenTeam2.wrappedValue -= 1
             $match.teamTakingTimeout.wrappedValue = 0
         default:
             print("Error correcting Point Scored in CorrectionView")

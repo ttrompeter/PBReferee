@@ -25,12 +25,12 @@ struct StatisticsAdminView: View {
                                                   attachments:  [])
     
     private var totalMatchTimeoutsTeam1: String {
-        let totalTimeouts = match.games[0].timeOutsTeam1 + match.games[1].timeOutsTeam1 + match.games[2].timeOutsTeam1 + match.games[3].timeOutsTeam1 + match.games[4].timeOutsTeam1
+        let totalTimeouts = match.games[0].timeOutsTakenTeam1 + match.games[1].timeOutsTakenTeam1 + match.games[2].timeOutsTakenTeam1 + match.games[3].timeOutsTakenTeam1 + match.games[4].timeOutsTakenTeam1
         return String(totalTimeouts)
     }
     
     private var totalMatchTimeoutsTeam2: String {
-        let totalTimeouts = match.games[0].timeOutsTeam2 + match.games[1].timeOutsTeam2 + match.games[2].timeOutsTeam2 + match.games[3].timeOutsTeam2 + match.games[4].timeOutsTeam2
+        let totalTimeouts = match.games[0].timeOutsTakenTeam2 + match.games[1].timeOutsTakenTeam2 + match.games[2].timeOutsTakenTeam2 + match.games[3].timeOutsTakenTeam2 + match.games[4].timeOutsTakenTeam2
         return String(totalTimeouts)
     }
     

@@ -58,17 +58,17 @@ struct RefereeTimeOutView: View {
                             Text("\u{2022}") + Text(" Move back to your referee position")
                             Text("\u{2022}") + Text(" Announce:")
                             if match.isTeam1Serving {
-                                Text("     Serving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTeam1)  timeouts remaining")
+                                Text("     Serving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTakenTeam1)  timeouts remaining")
                                     .font(.title3)
                                     .foregroundColor(Constants.CRIMSON)
-                                Text("     Receiving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTeam2)  timeouts remaining")
+                                Text("     Receiving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTakenTeam2)  timeouts remaining")
                                     .font(.title3)
                                     .foregroundColor(Constants.CRIMSON)
                             } else {
-                                Text("     Receiving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTeam2)  timeouts remaining")
+                                Text("     Receiving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTakenTeam2)  timeouts remaining")
                                     .font(.title3)
                                     .foregroundColor(Constants.CRIMSON)
-                                Text("     Serving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTeam1)  timeouts remaining")
+                                Text("     Serving team you have ") + Text("\(3 - match.games[match.currentGameArrayIndex].timeOutsTakenTeam1)  timeouts remaining")
                                     .font(.title3)
                                     .foregroundColor(Constants.CRIMSON)
                             }
