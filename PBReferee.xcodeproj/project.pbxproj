@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E32B4FDF28DFF18B005383CD /* TimeOutImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B4FDE28DFF18B005383CD /* TimeOutImage.swift */; };
 		E32B4FE128E0BCE2005383CD /* ProgrammerNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B4FE028E0BCE2005383CD /* ProgrammerNotes.swift */; };
+		E32B4FE328E0C398005383CD /* TimeOutImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32B4FE228E0C398005383CD /* TimeOutImageModel.swift */; };
 		E351044A28DF8715002D16D4 /* PointImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E351044928DF8715002D16D4 /* PointImage.swift */; };
 		E3AC92BF28DEF20100C1FF5D /* DataLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92BE28DEF20100C1FF5D /* DataLoadView.swift */; };
 		E3AC92C128DEF24C00C1FF5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3AC92C028DEF24C00C1FF5D /* HomeView.swift */; };
@@ -101,6 +102,7 @@
 /* Begin PBXFileReference section */
 		E32B4FDE28DFF18B005383CD /* TimeOutImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutImage.swift; sourceTree = "<group>"; };
 		E32B4FE028E0BCE2005383CD /* ProgrammerNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammerNotes.swift; sourceTree = "<group>"; };
+		E32B4FE228E0C398005383CD /* TimeOutImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutImageModel.swift; sourceTree = "<group>"; };
 		E351044928DF8715002D16D4 /* PointImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointImage.swift; sourceTree = "<group>"; };
 		E3AC92BE28DEF20100C1FF5D /* DataLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadView.swift; sourceTree = "<group>"; };
 		E3AC92C028DEF24C00C1FF5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				E3DD3F6B28DE88F0008B47C4 /* SheetManager.swift */,
 				E3DD3F7B28DE9623008B47C4 /* StorageManager.swift */,
 				E32B4FDE28DFF18B005383CD /* TimeOutImage.swift */,
+				E32B4FE228E0C398005383CD /* TimeOutImageModel.swift */,
 				E3DD3F6D28DE8921008B47C4 /* TimeoutImageX.swift */,
 				E3DD3F7F28DE96A2008B47C4 /* Violation.swift */,
 			);
@@ -441,6 +444,7 @@
 				E3DD3F6C28DE88F0008B47C4 /* SheetManager.swift in Sources */,
 				E3EE18CE28DEAF16005E0DD6 /* MedicalTimeOutView.swift in Sources */,
 				E3DD3F8028DE96A2008B47C4 /* Violation.swift in Sources */,
+				E32B4FE328E0C398005383CD /* TimeOutImageModel.swift in Sources */,
 				E3AC92E128DEFE0E00C1FF5D /* MatchOverView.swift in Sources */,
 				E3AC92C528DEF2DB00C1FF5D /* MatchView.swift in Sources */,
 				E3AC92D528DEF5AE00C1FF5D /* WarningView.swift in Sources */,
